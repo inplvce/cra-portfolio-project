@@ -6,7 +6,7 @@ import {inspect} from "util";
 export const Main = () => {
     return (
         <StyledMain>
-<FlexWrapper align={"center"} justifay={"space-around"}>
+<FlexWrapper align={"center"} justify={"space-around"}>
     <div>
         <span>Hi! everyone</span>
         <h2>Uladzimir Kaniushenka</h2>

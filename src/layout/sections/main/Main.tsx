@@ -10,7 +10,9 @@ export const Main = () => {
     <div>
         <span>Hi! everyone</span>
         <h2>Uladzimir Kaniushenka</h2>
-        <h1>A Web Developer.</h1>
+        <h1>A Web Developer & UX Designer</h1>
+        <p>Make designs, visual identities, apps, websites, social media.</p>
+        <button>get in touch</button>
     </div>
     <Photo src={photo} alt=''/>
 </FlexWrapper>

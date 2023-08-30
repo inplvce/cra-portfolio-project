@@ -7,7 +7,7 @@ import {Work} from "./work/Work";
 import socialImg from './../../../assets/images/proj1.webp';
 import timerImg from './../../../assets/images/proj2.webp';
 
-const worksItems = ["All", "Landing Page", "React", "spa"]
+const worksItems = ["All", "Landing Page", "React", "spa", "Design"]
 
 export const Works = () => {
     return (
@@ -32,5 +32,5 @@ export const Works = () => {
 
 const StyledWorks = styled.section`
 min-height: 100vh;
-  background-color: lightcyan;
+  background-color: snow;
 `

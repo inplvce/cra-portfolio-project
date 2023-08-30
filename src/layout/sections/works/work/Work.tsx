@@ -16,20 +16,20 @@ export const Work = (props: WorkPropsType) => {
             <Image src={props.src} alt=""/>
             <Title>{props.title}</Title>
             <Text>{props.text}</Text>
-            <Link href={"#"}>Demo</Link>
-            <Link href={"#"}>Code</Link>
+            <Link href={"#"}>Demo </Link>
+            <Link href={"#"}>Code </Link>
 
         </StyledWork>
     );
 };
 
 const StyledWork = styled.div`
-background-color: orange;
+background-color: skyblue;
   max-width: 540px;
   width: 100%;
 `
 const Image = styled.img`
-    width: 100%;
+    width: 90%;
   height: 260px;
   object-fit: cover;
 

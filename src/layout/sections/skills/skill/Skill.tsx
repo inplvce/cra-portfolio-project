@@ -15,8 +15,8 @@ export const Skill = (props: SkillPropsType) => {
     return (
         <StyledSkill>
             <Icon iconId={props.iconId}/>
-            {/*<SkillTitle>{props.title}</SkillTitle>*/}
-            {/*<SkillText>{props.description}</SkillText>*/}
+            <SkillTitle>{props.title}</SkillTitle>
+            <SkillText>{props.description}</SkillText>
 
         </StyledSkill>
     );
@@ -24,7 +24,7 @@ export const Skill = (props: SkillPropsType) => {
 
 const StyledSkill = styled.div`
 width: 30%;
-  background-color: snow;
+  //background-color: snow;
   margin: 10px;
   text-align: center;
 `

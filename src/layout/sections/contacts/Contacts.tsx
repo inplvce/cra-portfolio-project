@@ -21,7 +21,7 @@ export const Contacts = () => {
 
 const StyledContact = styled.section`
 min-height: 50vh;
-  background-color: blanchedalmond;
+  //background-color: blanchedalmond;
   
 `
 

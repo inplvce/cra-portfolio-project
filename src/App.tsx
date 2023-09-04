@@ -9,19 +9,23 @@ import {Testimony} from "./layout/sections/testimony/Testimony";
 import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Slogan} from "./components/slogan/Slogan";
 import {Footer} from "./layout/footer/Footer";
+import React from "react";
+// import {Testing} from "./layout/sections/testing/Testing";
 
 
 function App() {
     return (
         <div className="App">
-            <Header />
-            <Main />
-            <Skills />
-            <Works />
+
+            <Header/>
+            <Main/>
+            <Skills/>
+            <Works/>
             <Testimony/>
             <Contacts/>
-            <Slogan />
-            <Footer />
+            <Slogan/>
+            <Footer/>
+            {/*<Testing/>*/}
         </div>
     );
 }
@@ -29,7 +33,7 @@ function App() {
 export default App;
 
 const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    color: #e91e63;
+  font-size: 1.5em;
+  text-align: center;
+  color: #e91e63;
 `;

@@ -23,20 +23,26 @@ export const HeaderMenu = (props: {menuItems: Array<string>}) => {
 const StyledMenu = styled.nav`
     ul {
       display: flex;
-      gap: 30px;
+      gap: 40px;
       justify-content: center;
     }
 `
 
 const Link = styled.a`
-font-family: 'Manrope', sans-serif;
-  font-weight: 400px;
-  font-size: 30px;
-  line-height: 55px;
-  
+  color: #828282;
   text-align: center;
-  color: ${theme.colors.primaryBg};
-}
+  font-family: Manrope, sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55%;
+  letter-spacing: 0.57px;
+  text-transform: capitalize;
+  
+  &:hover {
+    color: #111;
+    transition: all 0.5s ease;
+  }
 
 `
 

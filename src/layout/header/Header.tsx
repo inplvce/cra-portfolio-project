@@ -5,7 +5,7 @@ import {Container} from "../../components/container/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 
-const items = ["Home", "Skills", "Works", "Testimony", "Contacts"]
+const items = ["About", "Works", "Contacts"]
 
 export const Header = () => {
     return (
@@ -21,11 +21,12 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background: rgba(31, 31, 32, 0.9);
-  padding: 20px 0;
+  background: rgb(255, 255, 255);
+  padding: 30px 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999999;
+
 `

@@ -12,11 +12,11 @@ export const Main = () => {
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
                     <div>
-                        <span>Hi! everyone</span>
+
                         <Name>Uladzimir Kaniushenka</Name>
                         <MainTitle>Developer & Designer</MainTitle>
                         <Paragraph>Make designs, visual identities, apps, websites, social media.</Paragraph>
-                        <Button>get in touch</Button>
+                        <Button>About</Button>
 
                     </div>
                     <Photo src={photo} alt=''/>
@@ -34,20 +34,38 @@ const StyledMain = styled.div`
 `
 
 const Photo = styled.img`
-  width: 450px;
-  height: 436px;
+  width: 410px;
+max-width: 100%;
   object-fit: cover;
 `
 
 const MainTitle = styled.h1`
-  font-size: 40px;
-  line-height: 60px;
+  color: #111;
+  font-family: Manrope, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123%; /* 59.04px */
+  letter-spacing: -0.96px;
+  text-transform: capitalize;
 `
 
 const Name = styled.h2`
-font-size: 65px;
-  line-height: 120%;
+  color: #111;
+  font-family: Manrope, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121%; /* 102.85px */
+  letter-spacing: -1.7px;
+  text-transform: capitalize;
 `
 const Paragraph = styled.p`
   line-height: 45px;
+  color: #282828;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  line-height: 234.523%; /* 44.559px */
+  letter-spacing: 0.38px;
+  border-top: 24px;
 `

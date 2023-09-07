@@ -38,6 +38,8 @@ const Photo = styled.img`
   width: 410px;
 max-width: 100%;
   object-fit: cover;
+
+  border-radius: 396px;
 `
 
 const MainTitle = styled.h1`

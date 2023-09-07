@@ -7,19 +7,16 @@ export const ButtonOne = styled.button`
   flex-shrink: 0;
   border-radius: 40px;
   background: #2B2C2D;
-
-  //border: 1px solid whitesmoke;
-  border-radius: 300px;
   
-  color: white;
+  color: #FFF;
   text-align: center;
-  font-family: "Manrope", sans-serif;
+  font-family: Manrope, sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 200;
-  border-top: 100px;
-  line-height: 234.523%; /* 44.559px */
-  letter-spacing: 1.9px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  letter-spacing: 0.54px;
   //text-transform: uppercase;
   transition: all 0.5s ease;
   
@@ -45,16 +42,12 @@ export const ButtonStroke = styled.button`
 
   border-radius: 40px;
   border: 2px solid #E9E9E9;
-
-  line-height: 234.523%; /* 44.559px */
-  letter-spacing: 1.9px;
-  //text-transform: uppercase;
   transition: all 0.5s ease;
   margin-left: 16px;
   
   &:hover {
     border-radius: 40px;
-    border: 2px solid #2B2C2D;
+    border: 2px solid dodgerblue;
   }
 
 `

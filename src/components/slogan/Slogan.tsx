@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../SectionTitle";
-import {Button} from "../buttons/Button";
+import {ButtonOne} from "../buttons/Button";
 
 export const Slogan = () => {
     return (
@@ -9,7 +9,7 @@ export const Slogan = () => {
             <SectionTitle>
                 I Am Available For Freelance
             </SectionTitle>
-         <Button>Hi</Button>
+         <ButtonOne>Hi</ButtonOne>
         </StyledSlogan>
     );
 };

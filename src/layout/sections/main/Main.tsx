@@ -2,8 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import photo from "../../../assets/images/myImg.jpg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {inspect} from "util";
-import {Button} from "../../../components/buttons/Button";
+// import {inspect} from "util";
+import {ButtonStroke, ButtonOne} from "../../../components/buttons/Button";
 import {Container} from "../../../components/container/Container";
 
 export const Main = () => {
@@ -16,7 +16,8 @@ export const Main = () => {
                         <Name>Uladzimir Kaniushenka</Name>
                         <MainTitle>Developer & Designer</MainTitle>
                         <Paragraph>Make designs, visual identities, apps, websites, social media.</Paragraph>
-                        <Button>About</Button>
+                        <ButtonOne>See my work</ButtonOne>
+                        <ButtonStroke>Download CV</ButtonStroke>
 
                     </div>
                     <Photo src={photo} alt=''/>
@@ -42,30 +43,32 @@ max-width: 100%;
 const MainTitle = styled.h1`
   color: #111;
   font-family: Manrope, sans-serif;
-  font-size: 48px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 500;
-  line-height: 123%; /* 59.04px */
-  letter-spacing: -0.96px;
-  text-transform: capitalize;
+  line-height: 120%; /* 67.2px */
+  letter-spacing: -1.12px;
+
 `
 
 const Name = styled.h2`
   color: #111;
   font-family: Manrope, sans-serif;
-  font-size: 64px;
+  font-size: 56px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 121%; /* 102.85px */
-  letter-spacing: -1.7px;
-  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 120%; /* 67.2px */
+  letter-spacing: -1.12px;
+  margin-top: 25%;
 `
 const Paragraph = styled.p`
-  line-height: 45px;
   color: #282828;
   font-family: Manrope, sans-serif;
+  font-size: 18px;
   font-style: normal;
-  line-height: 234.523%; /* 44.559px */
-  letter-spacing: 0.38px;
-  border-top: 24px;
+  font-weight: 400;
+  line-height: 234.523%; /* 42.214px */
+  letter-spacing: 0.36px;
+  margin-top: 24px;
+  margin-bottom: 80px;
 `

@@ -44,6 +44,7 @@ export const ButtonStroke = styled.button`
   border: 2px solid #E9E9E9;
   transition: all 0.5s ease;
   margin-left: 16px;
+  margin-top: 16px;
   
   &:hover {
     border-radius: 40px;

@@ -13,6 +13,7 @@ export const Contacts = () => {
                 <Field placeholder={"name"}/>
                 <Field placeholder={"subject"}/>
                 <Field placeholder={"message"} as={'textarea'}/>
+                <StyledContentEdit contentEditable='true' data-placeholder={'hi'}></StyledContentEdit>
                 <button type={'submit'}>Send Message</button>
             </StyledForm>
         </StyledContact>
@@ -37,4 +38,12 @@ max-width: 500px;
 const Field = styled.input`
 
 `
-
+const StyledContentEdit = styled.div`
+width: 900px;
+  height: 120px;
+  [contenteditable]:empty:before {
+    content: attr(data-placeholder);
+    color: grey;
+    display: inline-block;
+  }
+`

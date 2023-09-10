@@ -2,11 +2,11 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
 export const ButtonOne = styled.button`
-  width: 187px;
+  width: 200px;
   height: 68px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: #2B2C2D;
+  background: #1A1B1D;
   
   color: #FFF;
   text-align: center;
@@ -19,6 +19,7 @@ export const ButtonOne = styled.button`
   letter-spacing: 0.54px;
   //text-transform: uppercase;
   transition: all 0.5s ease;
+  margin-right: 16px;
   
   &:hover {
     color: white;
@@ -27,7 +28,7 @@ export const ButtonOne = styled.button`
 
 `
 export const ButtonStroke = styled.button`
-  width: 196px;
+  width: 200px;
   height: 68px;
   flex-shrink: 0;
   color: #2B2C2D;
@@ -43,7 +44,6 @@ export const ButtonStroke = styled.button`
   border-radius: 40px;
   border: 2px solid #E9E9E9;
   transition: all 0.5s ease;
-  margin-left: 16px;
   margin-top: 16px;
   
   &:hover {
@@ -51,4 +51,28 @@ export const ButtonStroke = styled.button`
     border: 2px solid dodgerblue;
   }
 
+`
+
+export const ButtonEllips = styled.button`
+  border-radius: 187px;
+  background: #1A1B1D;
+  width: 187px;
+  height: 187px;
+  flex-shrink: 0;
+  margin-top: 120px;
+
+  color: #FFF;
+  font-family: Manrope,sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 225.023%; /* 40.504px */
+  letter-spacing: 0.36px;
+
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: white;
+    background-color: dodgerblue;
+  }
 `

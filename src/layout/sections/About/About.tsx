@@ -2,6 +2,7 @@ import React from 'react';
 import {Container} from "../../../components/container/Container";
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {ButtonEllips} from "../../../components/buttons/Button";
 
 export const About = () => {
     return (
@@ -27,10 +28,11 @@ export const About = () => {
 
 const AboutStyled = styled.section`
   min-height: 760px;
-  background-color: skyblue;
-  .line {
-    border-bottom: 1px solid red;
-  }
+  display: flex;
+              //background-color: pink;
+  //max-width: 1140px;
+  //width: 100%;
+  //flex;
 `
 
 const StyledAboutTitle = styled.h3`
@@ -67,36 +69,14 @@ const StyledSkills = styled.text`
   letter-spacing: 0.36px;
 
 `
-const ButtonEllips = styled.button`
-  border-radius: 187px;
-  background: #1A1B1D;
-  width: 187px;
-  height: 187px;
-  flex-shrink: 0;
-  margin-top: 120px;
 
-  color: #FFF;
-  font-family: Manrope,sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 225.023%; /* 40.504px */
-  letter-spacing: 0.36px;
-
-  transition: all 0.5s ease;
-
-  &:hover {
-    color: white;
-    background-color: dodgerblue;
-  }
-`
 const StyledBlock = styled.span`
 display: flex;
   justify-content: space-between;
   margin-top: 80px;
-  background-color: skyblue;
+              //background-color: skyblue;
   
-
+  
 `
 const StyledBlockLeft = styled.div`
 min-width: 543px;
@@ -108,7 +88,6 @@ const StyledBlockRight = styled.div`
 `
 
 const LineStyled = styled.div`
-  
   border-bottom: 1px solid #BCC2C5;
   margin-top: 8px ;
 `

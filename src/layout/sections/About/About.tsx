@@ -27,8 +27,9 @@ export const About = () => {
 };
 
 const AboutStyled = styled.section`
-  min-height: 760px;
+  min-height: 60vh;
   display: flex;
+  flex-wrap: wrap;
               //background-color: pink;
   //max-width: 1140px;
   //width: 100%;
@@ -37,21 +38,22 @@ const AboutStyled = styled.section`
 
 const StyledAboutTitle = styled.h3`
   width: 63px;
+  flex-wrap: wrap;
 
   color: #BCC2C5;
   font-family: Manrope, sans-serif;
-  font-size: 19px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: 150.023%; /* 28.504px */
   letter-spacing: -0.665px;
-  
+
   
 `
 const StyledLocation = styled.text`
   color: #1A1B1D;
   font-family: Manrope, sans-serif;
-  font-size: 48px;
+  font-size: 3em;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 57.6px */
@@ -62,9 +64,8 @@ const StyledLocation = styled.text`
 const StyledSkills = styled.text`
   color: #1A1B1D;
   font-family: Manrope, sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
-  font-weight: 400;
   line-height: 225.023%; /* 40.504px */
   letter-spacing: 0.36px;
 
@@ -75,16 +76,20 @@ display: flex;
   justify-content: space-between;
   margin-top: 80px;
               //background-color: skyblue;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+
   
   
 `
 const StyledBlockLeft = styled.div`
-min-width: 543px;
+max-width: 50%;
 `
 const StyledBlockRight = styled.div`
-  max-width: 440px;
-  flex-direction: column;
+  max-width: 40%;
+  //flex-direction: column;
   //text-align: right;
+  //order: inherit;
 `
 
 const LineStyled = styled.div`

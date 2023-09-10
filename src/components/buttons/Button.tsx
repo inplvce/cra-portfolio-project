@@ -2,16 +2,16 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
 export const ButtonOne = styled.button`
-  width: 200px;
-  height: 68px;
-  flex-shrink: 0;
+  cursor: pointer;
+  width: 180px;
+  height: 80px;
   border-radius: 40px;
   background: #1A1B1D;
   
   color: #FFF;
   text-align: center;
   font-family: Manrope, sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -28,13 +28,13 @@ export const ButtonOne = styled.button`
 
 `
 export const ButtonStroke = styled.button`
-  width: 200px;
-  height: 68px;
+  width: 180px;
+  height: 80px;
   flex-shrink: 0;
   color: #2B2C2D;
   text-align: center;
   font-family: Manrope, sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

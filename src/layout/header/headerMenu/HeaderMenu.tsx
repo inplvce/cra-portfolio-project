@@ -32,7 +32,7 @@ const Link = styled.a`
   color: #828282;
   text-align: center;
   font-family: Manrope, sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: 55%;

@@ -43,9 +43,9 @@ max-width: 100%;
 const MainTitle = styled.h1`
   color: #111;
   font-family: Manrope, sans-serif;
-  font-size: 56px;
+  font-size: 3.5em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 450;
   line-height: 120%; /* 67.2px */
   letter-spacing: -1.12px;
 
@@ -54,16 +54,16 @@ const MainTitle = styled.h1`
 const Name = styled.h2`
   color: #111;
   font-family: Manrope, sans-serif;
-  font-size: 56px;
+  font-size: 3.5em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 450;
   line-height: 120%; /* 67.2px */
   letter-spacing: -1.12px;
 `
 const Paragraph = styled.p`
   color: #282828;
   font-family: Manrope, sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: 234.523%; /* 42.214px */

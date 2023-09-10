@@ -10,7 +10,7 @@ import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Slogan} from "./components/slogan/Slogan";
 import {Footer} from "./layout/footer/Footer";
 import React from "react";
-import {About} from "./layout/sections/About/About";
+import {About} from "./layout/sections/about/About";
 // import {Testing} from "./layout/sections/testing/Testing";
 
 
@@ -21,7 +21,7 @@ function App() {
             <Header/>
             <Main/>
             <About/>
-            <Skills/>
+            {/*<Skills/>*/}
             <Works/>
             <Testimony/>
             <Contacts/>

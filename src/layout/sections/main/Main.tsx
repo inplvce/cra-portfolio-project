@@ -38,6 +38,7 @@ max-width: 100%;
   object-fit: cover;
 
   border-radius: 396px;
+  order: -1;
 `
 
 const MainTitle = styled.h1`
@@ -45,7 +46,7 @@ const MainTitle = styled.h1`
   font-family: Manrope, sans-serif;
   font-size: 3.5em;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 400;
   line-height: 120%; /* 67.2px */
   letter-spacing: -1.12px;
 
@@ -56,7 +57,7 @@ const Name = styled.h2`
   font-family: Manrope, sans-serif;
   font-size: 3.5em;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 400;
   line-height: 120%; /* 67.2px */
   letter-spacing: -1.12px;
 `

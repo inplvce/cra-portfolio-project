@@ -36,7 +36,7 @@ const AboutSectionStyled = styled.section`
   //background-color: gainsboro;
 `
 
-const StyledAboutTitle = styled.text`
+const StyledAboutTitle = styled.h3`
   color: #1A1B1D;
   font-family: Manrope, sans-serif;
   font-size: 3em;
@@ -44,16 +44,19 @@ const StyledAboutTitle = styled.text`
   font-weight: 300;
   line-height: 120%; /* 57.6px */
   letter-spacing: -0.96px;
+  margin-bottom: 24px;
   //background-color: pink;
+ 
 `
 
-const StyledParagraph = styled.text`
+const StyledParagraph = styled.p`
   color: #1A1B1D;
   font-family: Manrope, sans-serif;
   font-size: 1em;
   font-style: normal;
   line-height: 225.023%; /* 40.504px */
   letter-spacing: 0.36px;
+  margin-bottom: 40px;
 
 `
 

@@ -11,13 +11,13 @@ export const Main = () => {
         <StyledMain>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
-                    <div>
+                    <StiledNaming>
                         <Name>Uladzimir Kaniushenka</Name>
                         <MainTitle>Developer & Designer</MainTitle>
                         <Paragraph>Make designs, visual identities, apps, websites, social media.</Paragraph>
                         <ButtonOne>See my work</ButtonOne>
                         <ButtonStroke>Download CV</ButtonStroke>
-                    </div>
+                    </StiledNaming>
                     <Photo src={photo} alt=''/>
                 </FlexWrapper>
             </Container>
@@ -71,4 +71,9 @@ const Paragraph = styled.p`
   letter-spacing: 0.36px;
   margin-top: 24px;
   margin-bottom: 40px;
+`
+
+const StiledNaming = styled.div`
+text-align: left;
+
 `

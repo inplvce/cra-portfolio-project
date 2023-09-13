@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 
 export const TabMenu = (props: {menuItems: Array<string>}) => {
-    const [isActive, setIactive] = useState<'All' | 'Design' | 'Development'>('All')
     return (
         <StyledTabMenu>
             <ul>
@@ -36,16 +35,8 @@ const ListItem = styled.li`
   line-height: normal;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  line-height: 400%;
   
-  max-width: 141px;
-  width: 100%;
-  height: 68px;
-  flex-shrink: 0;
-  border-radius: 40px;
-  border: 2px solid #E9E9E9;
-  
-  margin-bottom: 160px;
+
   
 `
 

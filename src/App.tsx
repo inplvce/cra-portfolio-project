@@ -16,12 +16,13 @@ import {About} from "./layout/sections/about/About";
 
 function App() {
     return (
-        <div className="App">
 
+        <div className="App">
             <Header/>
             <Main/>
             <About/>
             {/*<Skills/>*/}
+
             <Works/>
             <Testimony/>
             <Contacts/>

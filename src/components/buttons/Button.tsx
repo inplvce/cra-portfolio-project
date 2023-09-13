@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
+
+
 export const ButtonOne = styled.button`
   cursor: pointer;
   width: 180px;
@@ -159,3 +161,4 @@ export const ButtonStrokeSmallDevelopment = styled.button`
   }
 
 `
+

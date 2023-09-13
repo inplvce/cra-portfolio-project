@@ -61,7 +61,7 @@ const Text = styled.p`
   text-align: left;
 `
 
-export const TitleWorkStyled = styled.text`
+export const TitleWorkStyled = styled.h3`
 color: #1A1B1D;
   max-width: 680px;
   width: 100%;

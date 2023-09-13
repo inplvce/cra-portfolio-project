@@ -69,9 +69,7 @@ const StyledBlock = styled.span`
   //margin-bottom: 80px;
   //flex-wrap: wrap;
 
-
-
-
+  
 `
 
 const StyledBlockLeft = styled.div`

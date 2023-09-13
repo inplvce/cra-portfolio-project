@@ -41,12 +41,14 @@ export const Works = () => {
     );
 };
 
+
+
 const StyledWorks = styled.section`
   min-height: 100vh;
   background-color: snow;
 `
 
-const StyledTopTitleWork = styled.h3`
+const StyledTopTitleWork = styled.h2`
   width: 63px;
   flex-wrap: wrap;
   margin-top: 40px;

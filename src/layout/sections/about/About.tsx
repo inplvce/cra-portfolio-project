@@ -30,6 +30,7 @@ export const About = () => {
 
 const AboutSectionStyled = styled.section`
   min-height: 60vh;
+  padding-top: 64px;
   //background-color: pink;
   //max-width: 1140px;
   //width: 100%;

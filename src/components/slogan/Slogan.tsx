@@ -22,10 +22,10 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
-  display: flex;
   min-height: 480px;
   height: 100%;
   background-color: #1A1B1D;
+  padding-top: 120px;
 
 
 `
@@ -37,7 +37,6 @@ const StyledImageContact = styled.img`
   border-radius: 142.5px;
   object-fit: cover;
   order: -1;
-  im
 
     `
 const StyledText  = styled.h4`

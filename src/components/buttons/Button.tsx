@@ -62,7 +62,7 @@ export const ButtonEllips = styled.button`
   width: 187px;
   height: 187px;
   flex-shrink: 3;
-  margin-top: 80px;
+  margin-top: 20px;
 
   color: #FFF;
   font-family: Manrope,sans-serif;

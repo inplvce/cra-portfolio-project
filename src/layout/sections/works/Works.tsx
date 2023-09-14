@@ -7,6 +7,8 @@ import {TitleWorkStyled, Work} from "./work/Work";
 
 
 import {Container} from "../../../components/container/Container";
+import {Line} from "../../../components/Line/Line";
+import {ButtonStroke} from "../../../components/buttons/Button";
 
 const worksItems = ["All", "Design", "Development"]
 
@@ -18,7 +20,7 @@ export const Works = () => {
                     <StyledTopTitleWork>
                         Work
                     </StyledTopTitleWork>
-                    <LineStyled/>
+                    <Line/>
                     <TitleWorkStyled>I create designs, visual identity,
                         applications, websites</TitleWorkStyled>
                     {/*<ButtonOneSmall>All</ButtonOneSmall>*/}
@@ -33,14 +35,14 @@ export const Works = () => {
                         <Work title={"Name Project Two"}
                               src={'#'}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-
+                        <ButtonStrokeWorks>More Work</ButtonStrokeWorks>
                     </FlexWrapper>
                 </SectionTitle>
             </Container>
+
         </StyledWorks>
     );
 };
-
 
 
 const StyledWorks = styled.section`
@@ -61,11 +63,32 @@ const StyledTopTitleWork = styled.h2`
   line-height: 150.023%; /* 28.504px */
   letter-spacing: -0.665px;
 `
-const LineStyled = styled.div`
-  border-bottom: 1px solid #BCC2C5;
-  margin-top: 8px;
-  margin-bottom: 80px;
-`
+
 const WorksItems = styled.button`
   color: green;
+`
+
+export const ButtonStrokeWorks = styled.button`
+  width: 180px;
+  height: 80px;
+  flex-shrink: 0;
+  color: #2B2C2D;
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  text-transform: capitalize;
+
+  border-radius: 40px;
+  border: 2px solid #E9E9E9;
+  transition: all 0.5s ease;
+  margin-top: 80px;
+  margin-bottom: 160px;
+  
+  &:hover {
+    border-radius: 40px;
+    border: 2px solid dodgerblue;
 `

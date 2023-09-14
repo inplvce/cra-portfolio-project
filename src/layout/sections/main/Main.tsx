@@ -11,13 +11,13 @@ export const Main = () => {
         <StyledMain>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
-                    <StiledNaming>
+                    <StyledNaming>
                         <Name>Uladzimir Kaniushenka</Name>
                         <MainTitle>Developer & Designer</MainTitle>
                         <Paragraph>Make designs, visual identities, apps, websites, social media.</Paragraph>
                         <ButtonOne>See my work</ButtonOne>
                         <ButtonStroke>Download CV</ButtonStroke>
-                    </StiledNaming>
+                    </StyledNaming>
                     <Photo src={photo} alt=''/>
                 </FlexWrapper>
             </Container>
@@ -42,38 +42,18 @@ max-width: 100%;
 `
 
 const MainTitle = styled.h1`
-  color: #111;
-  font-family: Manrope, sans-serif;
-  font-size: 3.5em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 67.2px */
-  letter-spacing: -1.12px;
-
+    
 `
 
 const Name = styled.h2`
-  color: #111;
-  font-family: Manrope, sans-serif;
-  font-size: 3.5em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 67.2px */
-  letter-spacing: -1.12px;
+
 `
 const Paragraph = styled.p`
-  color: #282828;
-  font-family: Manrope, sans-serif;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 234.523%; /* 42.214px */
-  letter-spacing: 0.36px;
   margin-top: 24px;
   margin-bottom: 40px;
 `
 
-const StiledNaming = styled.div`
+const StyledNaming = styled.div`
 text-align: left;
 
 `

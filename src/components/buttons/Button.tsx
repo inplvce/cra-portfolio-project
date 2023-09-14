@@ -36,7 +36,7 @@ export const ButtonStroke = styled.button`
   color: #2B2C2D;
   text-align: center;
   font-family: Manrope, sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -47,6 +47,7 @@ export const ButtonStroke = styled.button`
   border: 2px solid #E9E9E9;
   transition: all 0.5s ease;
   margin-top: 16px;
+
   
   &:hover {
     border-radius: 40px;

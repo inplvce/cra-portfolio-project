@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Line} from "../../../../components/Line/Line";
 
 type WorkPropsType = {
     title: string
@@ -7,7 +8,6 @@ type WorkPropsType = {
     src: string
 
 }
-
 
 
 export const Work = (props: WorkPropsType) => {
@@ -19,35 +19,31 @@ export const Work = (props: WorkPropsType) => {
             <Text>{props.text}</Text>
             <Link href={"#"}>Demo </Link>
             <Link href={"#"}>Code </Link>
-
         </StyledWork>
     );
 };
 
 const StyledWork = styled.div`
-background-color: snow;
+  background-color: snow;
   max-width: 540px;
   width: 100%;
-  color: #1A1B1D;
-  font-family: Manrope, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  
-  
 `
 const Image = styled.img`
-    width: 90%;
-  height: 260px;
+  width: 100%;
+  height: 540px;
   object-fit: cover;
+  margin-top: 80px;
 
 `
 
 const Link = styled.a`
-background-color: coral;
+  background-color: #ffffff;
+  text-align: right;
+  font-size: 16px;
 `
 
-const Title = styled.h3`
-
+const Title = styled.h5`
+  text-align: left;
 `
 
 const Text = styled.p`
@@ -61,22 +57,10 @@ const Text = styled.p`
   text-align: left;
 `
 
-export const TitleWorkStyled = styled.h3`
-color: #1A1B1D;
-  max-width: 680px;
-  width: 100%;
-  text-align: left;
-font-family: Manrope, sans-serif;
-font-size: 48px;
-font-style: normal;
-font-weight: 300;
-line-height: 120%; /* 57.6px */
-letter-spacing: -0.96px;
-  display: flex;
-  margin-bottom: 64px;
-  
-//background-color: pink;
+export const TitleWorkStyled = styled.h4`
+
 `
+
 const LineStyledWork = styled.div`
   border-bottom: 1px solid #BCC2C5;
   margin-top: 24px;

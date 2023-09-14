@@ -3,13 +3,14 @@ import {Container} from "../../../components/container/Container";
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {ButtonEllips} from "../../../components/buttons/Button";
+import {Line} from "../../../components/Line/Line";
 
 export const About = () => {
     return (
         <AboutSectionStyled>
             <Container>
                 <StyledTopTitle>About</StyledTopTitle>
-                <LineStyled/>
+               <Line/>
                 <FlexWrapper justify={"space-between"}>
                     {/*<StyledBlock>*/}
                         <StyledBlockLeft><StyledAboutTitle>I am Designer & Developer based in Minsk,
@@ -36,14 +37,7 @@ const AboutSectionStyled = styled.section`
   //background-color: gainsboro;
 `
 
-const StyledAboutTitle = styled.h3`
-  color: #1A1B1D;
-  font-family: Manrope, sans-serif;
-  font-size: 3em;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 120%; /* 57.6px */
-  letter-spacing: -0.96px;
+const StyledAboutTitle = styled.h4`
   margin-bottom: 24px;
   //background-color: pink;
  
@@ -87,7 +81,7 @@ const StyledBlockRight = styled.div`
 const StyledTopTitle = styled.h3`
   color: #BCC2C5;
   font-family: Manrope, sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150.023%; /* 28.504px */
@@ -95,8 +89,4 @@ const StyledTopTitle = styled.h3`
   margin-top: 40px;
 `
 
-const LineStyled = styled.div`
-  border-bottom: 1px solid #BCC2C5;
-  margin-top: 8px;
-  margin-bottom: 80px;
-`
+

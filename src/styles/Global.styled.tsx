@@ -55,8 +55,45 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 225.023%; /* 40.504px */
     letter-spacing: 0.36px;
   }
+
+  h1 {
+    color: #111;
+    font-family: Manrope, sans-serif;
+    font-size: 3.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 67.2px */
+    letter-spacing: -1.12px;
+  }
   
-  h3 {
+  h2 {
+    color: #111;
+    font-family: Manrope, sans-serif;
+    font-size: 3.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 67.2px */
+    letter-spacing: -1.12px;
+  }
+  
+  h4 { //about | work | contact
+    color: #1A1B1D;
+    max-width: 680px;
+    width: 100%;
+    text-align: left;
+    font-family: Manrope, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -0.96px;
+    display: flex;
+    margin-bottom: 64px;
+
+    //background-color: pink;
+  }
+  
+  h5 {
     color: #1A1B1D;
     font-family: Manrope, sans-serif;
     font-size: 32px;
@@ -65,6 +102,8 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 120%; /* 38.4px */
     letter-spacing: -0.64px;
     text-align: left;
+    margin-top: 32px;
   }
-`
+  
 
+`

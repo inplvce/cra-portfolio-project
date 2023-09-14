@@ -47,7 +47,7 @@ export const Works = () => {
 
 const StyledWorks = styled.section`
   min-height: 100vh;
-  background-color: snow;
+  //background-color: snow;
 `
 
 const StyledTopTitleWork = styled.h2`

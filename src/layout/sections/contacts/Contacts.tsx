@@ -34,7 +34,7 @@ export const Contacts = () => {
 
 const StyledContact = styled.section`
   min-height: 50vh;
-  margin-top: 160px;
+
   background-color: #1A1B1D;;
   //background-color: blanchedalmond;
 

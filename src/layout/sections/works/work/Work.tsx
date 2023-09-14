@@ -24,7 +24,7 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-  background-color: snow;
+  //background-color: snow;
   max-width: 540px;
   width: 100%;
 `
@@ -32,7 +32,7 @@ const Image = styled.img`
   width: 100%;
   height: 540px;
   object-fit: cover;
-  margin-top: 80px;
+  margin-top: 64px;
 
 `
 

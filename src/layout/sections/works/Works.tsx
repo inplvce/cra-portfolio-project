@@ -86,7 +86,7 @@ export const ButtonStrokeWorks = styled.button`
   border: 2px solid #E9E9E9;
   transition: all 0.5s ease;
   margin-top: 80px;
-  margin-bottom: 160px;
+  margin-bottom: 124px;
   
   &:hover {
     border-radius: 40px;

@@ -11,12 +11,7 @@ export const Contacts = () => {
         <StyledContact>
             <Container>
                 <FlexWrapper>
-                <span>
-                    <h4>Let’s<br/>
-                        work<br/>
-                        together</h4>
-                    <StyledImageContact src={photo} alt=''/>
-                </span>
+
 
                 <StyledForm>
                     <Field placeholder={"name"}/>
@@ -35,7 +30,7 @@ export const Contacts = () => {
 const StyledContact = styled.section`
   min-height: 50vh;
 
-  background-color: #1A1B1D;;
+  background-color: #1A1B1D;
   //background-color: blanchedalmond;
 
 `
@@ -61,14 +56,4 @@ const StyledContentEdit = styled.div`
     color: grey;
     display: inline-block;
   }
-`
-const StyledImageContact = styled.img`
-  max-width: 238px;
-  width: 100%;
-  max-height: 220px;
-  height: 100%;
-  flex-shrink: 0;
-  border-radius: 142.5px;
-
-
 `

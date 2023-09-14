@@ -24,8 +24,8 @@ function App() {
             {/*<Skills/>*/}
             <Works/>
             {/*<Testimony/>*/}
-            <Contacts/>
             <Slogan/>
+            <Contacts/>
             <Footer/>
             {/*<Testing/>*/}
         </div>

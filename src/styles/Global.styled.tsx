@@ -105,5 +105,17 @@ export const GlobalStyle = createGlobalStyle`
     margin-top: 32px;
   }
   
+  input {
+    outline: none;
+  }
 
+a {
+  color: #F0F4F6;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 225.023%; /* 40.504px */
+  letter-spacing: 0.36px;
+}
 `

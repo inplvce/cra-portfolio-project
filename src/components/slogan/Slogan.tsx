@@ -11,8 +11,7 @@ export const Slogan = () => {
         <StyledSlogan>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
-                    <StyledText>Let's start a
-                        project together</StyledText>
+                    <StyledText>Let's start working together</StyledText>
                     <StyledImageContact src={photo} alt=''/>
                     </FlexWrapper>
             </Container>
@@ -29,15 +28,14 @@ const StyledSlogan = styled.section`
 
 `
 const StyledImageContact = styled.img`
-  max-width: 80px;
+  max-width: 200px;
   width: 100%;
   border-radius: 142.5px;
   object-fit: cover;
-  order: -1;
 
     `
 const StyledText  = styled.h4`
-    color: white;
+    color: #F0F4F6;
   text-align: left;
   align-items: center;
   margin-right: 120px;

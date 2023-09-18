@@ -15,5 +15,4 @@ display: flex;
   // flex-wrap: ${props => props.wrap || "nowrap"};
   height: 100%;
   flex-wrap: wrap;
-
   `

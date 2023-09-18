@@ -13,7 +13,7 @@ export const Contacts = () => {
     return (
         <StyledContact>
             <Container>
-                <FlexWrapper>
+                <FlexWrapper justify={"space-between"}>
                     <StyledForm>
                         <LineStyledContacts/>
                         <StyledLabel>01<StyledText>What’s your name?</StyledText></StyledLabel>
@@ -29,7 +29,7 @@ export const Contacts = () => {
                         {/*<Field contentEditable='true' placeholder={"Hello Uladzimir ... *"} />*/}
                         <StyledContentEdit contentEditable='true' data-placeholder={'Hello Uladzimir, let\'s start working together ... *'}></StyledContentEdit>
                         <LineStyledContactsBottom/>
-                        <ButtonEllipsContact type={'submit'}>Send Message</ButtonEllipsContact>
+                        <ButtonEllipsContact type={'submit'}>Send it!</ButtonEllipsContact>
                     </StyledForm>
                     <StyledContacts>
                         <Details/>
@@ -54,18 +54,20 @@ const StyledContact = styled.section`
 `
 
 const StyledForm = styled.form`
-  max-width: 80%;
+  max-width: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: auto;
-  
+  object-fit: cover;
 `
 
 const StyledContacts = styled.div`
-max-width: 20%;
+max-width: 220px;
   width: 100%;
+  margin-left: 80px;
+
 `
 
 const Field = styled.input`
@@ -85,7 +87,7 @@ const Field = styled.input`
 
 const StyledContentEdit = styled.div`
   max-width: 1040px;
-  width: 70%;
+  width: 700px;
   height: 420px;
   margin-top: 20px;
   margin-left: 54px;
@@ -117,9 +119,7 @@ const ButtonEllipsContact = styled.button`
   background: dodgerblue;
   width: 187px;
   height: 187px;
-  flex-shrink: 3;
   margin-top: -116px;
-margin-left: 440px;
 
   color: #F0F4F6;
   font-family: Manrope, sans-serif;
@@ -137,14 +137,18 @@ margin-left: 440px;
   }
 `
 const LineStyledContacts = styled.div`
+  
   border-bottom: 1px solid #828282;
   margin-top: 32px;
   margin-bottom: 40px;
-  width: 80%;
+  max-width: 700px;
+  width: 100%;
 `
 
 const LineStyledContactsBottom = styled.div`
+  
   border-bottom: 1px solid #828282;
   margin-top: 32px;
-  width: 80%;
+  max-width: 700px;
+  width: 100%;
 `

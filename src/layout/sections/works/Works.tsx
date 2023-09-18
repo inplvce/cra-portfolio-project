@@ -65,9 +65,7 @@ const StyledTopTitleWork = styled.h2`
   letter-spacing: -0.665px;
 `
 
-const WorksItems = styled.button`
-  color: green;
-`
+
 
 export const ButtonStrokeWorks = styled.button`
   width: 180px;

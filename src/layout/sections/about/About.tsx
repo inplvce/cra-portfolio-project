@@ -19,7 +19,7 @@ export const About = () => {
                             other technologies. I try to use current patterns and keep the code clean. In my spare time
                             I improve my English and learn new technologies.
                         </StyledParagraph>
-                            <ButtonEllips>About</ButtonEllips>
+                            <div><ButtonEllips>About</ButtonEllips></div>
                         </StyledBlockRight>
                     {/*</StyledBlock>*/}
                 </FlexWrapper>
@@ -27,6 +27,10 @@ export const About = () => {
         </AboutSectionStyled>
     );
 };
+
+const ButtonStyled = styled.div`
+  position: relative;
+`
 
 const AboutSectionStyled = styled.section`
   min-height: 60vh;

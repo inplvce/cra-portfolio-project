@@ -95,7 +95,9 @@ const Copyright = styled.small`
 
 const SocialsFooter = styled.div`
   display: flex;
+  justify-content: right;
   gap: 24px;
+  margin-left: 24px;
 
 
 

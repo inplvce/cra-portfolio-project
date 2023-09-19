@@ -57,6 +57,9 @@ export const ButtonStroke = styled.button`
 `
 
 export const ButtonEllips = styled.button`
+  position: page;
+  right: 4px;
+  top: 2px;
   border-radius: 187px;
   background: #1A1B1D;
   width: 187px;
@@ -79,6 +82,34 @@ export const ButtonEllips = styled.button`
     background-color: dodgerblue;
   }
 `
+
+export const ButtonEllipsMenu = styled.button`
+  position: fixed;
+  right: 4px;
+  top: 2px;
+  border-radius: 44px;
+  background: #1A1B1D;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 3;
+  margin-top: 20px;
+
+  color: #FFF;
+  font-family: Manrope,sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 225.023%; /* 40.504px */
+  letter-spacing: 0.36px;
+
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: white;
+    background-color: dodgerblue;
+  }
+`
+
 
 export const ButtonOneSmall = styled.button`
   cursor: pointer;

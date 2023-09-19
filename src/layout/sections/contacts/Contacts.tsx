@@ -121,7 +121,7 @@ const StyledLabel = styled.label`
 
 const ButtonEllipsContact = styled.button`
   position: absolute;
-  right: 164px;
+  right: 96px;
   top: 40px;
 
   border-radius: 187px;

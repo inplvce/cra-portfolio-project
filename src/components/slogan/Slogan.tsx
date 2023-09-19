@@ -29,11 +29,11 @@ export const Slogan = () => {
 const StyledBlocksSlogan = styled.span`
 display: flex;
   align-items: center;
-  gap: 180px
+  gap: 200px
 `
 
 const StyledSlogan = styled.section`
-  min-height: 400px;
+  min-height: 360px;
   height: 100%;
   background-color: #1A1B1D;
   padding-top: 104px;

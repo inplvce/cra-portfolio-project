@@ -29,14 +29,14 @@ export const Works = () => {
                     <TabMenu menuItems={worksItems}/>
                     <FlexWrapper justify={"space-between"}>
                         <Work title={"Name Project One"}
-                              src={'#'}
+                              src={'https://images.pexels.com/photos/3782134/pexels-photo-3782134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
 
                         <Work title={"Name Project Two"}
-                              src={'#'}
+                              src={'https://images.pexels.com/photos/7203727/pexels-photo-7203727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <ButtonStrokeWorks>More Work</ButtonStrokeWorks>
                     </FlexWrapper>
+                    <StyledButtonMoreWork><ButtonStrokeWorks>More Work</ButtonStrokeWorks></StyledButtonMoreWork>
                 </SectionTitle>
             </Container>
 
@@ -45,9 +45,15 @@ export const Works = () => {
 };
 
 
+const StyledButtonMoreWork = styled.div`
+  display: flex;
+  justify-content: center;
+
+`
+
 const StyledWorks = styled.section`
   min-height: 100vh;
-  padding-top: 64px;
+  padding-top: 120px;
   //background-color: snow;
 `
 

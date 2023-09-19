@@ -58,7 +58,7 @@ const Text = styled.p`
 `
 
 export const TitleWorkStyled = styled.h4`
-
+margin-bottom: 80px;
 `
 
 const LineStyledWork = styled.div`

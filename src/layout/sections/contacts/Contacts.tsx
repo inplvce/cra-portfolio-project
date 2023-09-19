@@ -24,10 +24,12 @@ export const Contacts = () => {
                         <Field placeholder={"Ivan & Ivan"}/>
                         <LineStyledContacts/>
                         <StyledLabel>04<StyledText>Your message...</StyledText></StyledLabel>
-                        {/*<Field contentEditable='true' placeholder={"Hello Uladzimir ... *"} />*/}
-                        <StyledContentEdit contentEditable='true' data-placeholder={'Hello Uladzimir, let\'s start working together ... *'}></StyledContentEdit>
+                        {/*<Field type={'message'} contentEditable='true' placeholder={'Hello Uladzimir, let\'s start working together... *'} />*/}
+                        <StyledContentEdit contentEditable="true" placeholder={'Hello Uladzimir let\'s start working together... *'} as={"textarea"}></StyledContentEdit>
+                        <StyledBlockForButton>
                         <LineStyledContactsBottom/>
                         <ButtonEllipsContact type={'submit'}>Send it!</ButtonEllipsContact>
+                        </StyledBlockForButton>
                     </StyledForm>
                     <StyledContacts>
                         <Details/>
@@ -57,20 +59,19 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: auto;
   object-fit: cover;
 `
 
 const StyledContacts = styled.div`
-max-width: 220px;
+max-width: 200px;
   width: 100%;
-  margin-left: 80px;
+  margin-left: 24px;
 
 `
 
 const Field = styled.input`
   max-width: 340px;
-  //width: 100%;
+  width: 100%;
   background-color: #1A1B1D;
   border: 0;
   font-family: Manrope, sans-serif;
@@ -84,11 +85,9 @@ const Field = styled.input`
 
 
 `
-
-const StyledContentEdit = styled.div`
+const StyledContentEdit = styled.textarea`
   max-width: 640px;
-  width: 100%;
-  height: 420px;
+  height: 320px;
   margin-top: 20px;
   margin-left: 54px;
   color: #F0F4F6;
@@ -96,12 +95,16 @@ const StyledContentEdit = styled.div`
   font-size: 24px;
 
 
-  [contenteditable]:empty:before {
-    content: attr(placeholder);
-    display: inline-block;
-
-  }
+//
+//[contentEditable]:empty:before {
+//    
+//    content: attr(placeholder);
+//  color: #ffffff;
+//  }
+  
 `
+
+
 const StyledText = styled.text`
   color: #F0F4F6;
   margin-left: 40px;
@@ -117,6 +120,10 @@ const StyledLabel = styled.label`
 `
 
 const ButtonEllipsContact = styled.button`
+  position: absolute;
+  right: 164px;
+  top: 40px;
+
   border-radius: 187px;
   background: dodgerblue;
   width: 187px;
@@ -135,7 +142,7 @@ const ButtonEllipsContact = styled.button`
 
   &:hover {
     color: #F0F4F6;
-    background-color: rgba(65,81,253,0.83);
+    background-color: rgba(65,81,253,1);
   }
 `
 const LineStyledContacts = styled.div`
@@ -147,10 +154,15 @@ const LineStyledContacts = styled.div`
   width: 100%;
 `
 
+const StyledBlockForButton = styled.div`
+  position: relative;
+  
+`
+
 const LineStyledContactsBottom = styled.div`
   
   border-bottom: 1px solid #828282;
-  margin-top: 32px;
+  margin-top: 40px;
   max-width: 700px;
   width: 100%;
 `

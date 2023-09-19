@@ -118,4 +118,21 @@ a {
   line-height: 225.023%; /* 40.504px */
   letter-spacing: 0.36px;
 }
+
+textarea {
+  width: 90%; /* Ширина поля в процентах */
+  height: 200px; /* Высота поля в пикселах */
+  resize: none; /* Запрещаем изменять размер */
+  
+  
+  background-color: #1A1B1D;
+  border: none;
+  color: #1A1B1D;
+  font-family: Manrope,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 225.023%; /* 40.504px */
+  letter-spacing: 0.36px;
+}
 `

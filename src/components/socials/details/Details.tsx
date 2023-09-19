@@ -14,7 +14,7 @@ export const Details = () => {
 };
 
 const TitleDetailssStyled = styled.p`
-  margin-top: 24px;
+  margin-top: 16px;
 color: #828282;
 font-size: 12px;
 font-weight: 500;

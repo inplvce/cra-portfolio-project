@@ -70,7 +70,8 @@ const StyledFooter = styled.footer`
   background-color: #1A1B1D;
   color: #F0F4F6;
   min-height: 20vh;
-  padding-top: 180px;
+  padding-top: 240px;
+  padding-bottom: 16px;
 `
 
 const Name = styled.span`

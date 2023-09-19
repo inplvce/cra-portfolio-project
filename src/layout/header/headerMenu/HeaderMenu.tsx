@@ -24,7 +24,9 @@ const StyledMenu = styled.nav`
     ul {
       display: flex;
       gap: 40px;
-      justify-content: center;
+      justify-content: space-around;
+      //max-width: 200px;
+      //width: 100%;
     }
 `
 

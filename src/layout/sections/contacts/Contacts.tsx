@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle";
-import {ButtonEllips, ButtonOne, ButtonStroke} from "../../../components/buttons/Button";
 import {Container} from "../../../components/container/Container";
 import photo from "../../../assets/images/myImg.jpg";
 import {FlexWrapper} from "../../../components/FlexWrapper";
@@ -71,6 +69,8 @@ max-width: 220px;
 `
 
 const Field = styled.input`
+  max-width: 340px;
+  width: 100%;
   background-color: #1A1B1D;
   border: 0;
   font-family: Manrope, sans-serif;
@@ -86,8 +86,8 @@ const Field = styled.input`
 `
 
 const StyledContentEdit = styled.div`
-  max-width: 1040px;
-  width: 700px;
+  max-width: 640px;
+  width: 100%;
   height: 420px;
   margin-top: 20px;
   margin-left: 54px;
@@ -111,6 +111,8 @@ const StyledLabel = styled.label`
   color: #828282;
   text-align: left;
   font-size: 12px;
+  
+
 
 `
 

@@ -70,7 +70,7 @@ max-width: 220px;
 
 const Field = styled.input`
   max-width: 340px;
-  width: 100%;
+  //width: 100%;
   background-color: #1A1B1D;
   border: 0;
   font-family: Manrope, sans-serif;

@@ -38,21 +38,33 @@ export const Footer = () => {
                     {/*        /!*</SocialLink>*!/*/}
                     {/*    </SocialItem>*/}
                     {/*</SocialList>*/}
+                    <StyledBlocksFoote>
+                        <CopyrightBlock>
+                            <Copyright>@ Uladzimir Kaniushenka, All Right Reserved.</Copyright>
+                        </CopyrightBlock>
+                        <SocialsFooter>
+                            <TextStyled href='Behance'>Behance</TextStyled>
+                            <TextStyled href='Instagram'>Instagram</TextStyled>
+                            <TextStyled href='LinkedIn'>LinkedIn</TextStyled>
+                            <TextStyled href='Telegram'>Telegram</TextStyled>
+                        </SocialsFooter>
+                    </StyledBlocksFoote>
 
-                    <CopyrightBlock>
-                        <Copyright>@ Uladzimir Kaniushenka, All Right Reserved.</Copyright>
-                    </CopyrightBlock>
-                    <SocialsFooter>
-                        <TextStyled href='Behance'>Behance</TextStyled>
-                        <TextStyled href='Instagram'>Instagram</TextStyled>
-                        <TextStyled href='LinkedIn'>LinkedIn</TextStyled>
-                        <TextStyled href='Telegram'>Telegram</TextStyled>
-                    </SocialsFooter>
                 </FlexWrapper>
             </Container>
         </StyledFooter>
     );
 };
+
+const StyledBlocksFoote = styled.span`
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1140px;
+  width: 100%;
+  
+
+`
 
 const StyledFooter = styled.footer`
   background-color: #1A1B1D;
@@ -65,9 +77,8 @@ const Name = styled.span`
 `
 
 const SocialList = styled.ul`
-  display: flex;
-  gap: 66px;
- 
+
+
 `
 
 const SocialItem = styled.li`
@@ -82,21 +93,17 @@ const Copyright = styled.small`
 `
 
 const SocialsFooter = styled.div`
-display: flex;
+  display: flex;
   gap: 24px;
-  max-width: 500px;
-  width: 100%;
-  text-align: left;
- margin-left: 24px;
+
 
 
 `
 
 const TextStyled = styled.a`
-font-size: 12px;
+  font-size: 12px;
 `
 
 const CopyrightBlock = styled.div`
 
-  text-align: left;
 `

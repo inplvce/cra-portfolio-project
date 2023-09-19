@@ -97,7 +97,7 @@ const StyledContentEdit = styled.div`
 
 
   [contenteditable]:empty:before {
-    content: attr(data-placeholder);
+    content: attr(placeholder);
     display: inline-block;
 
   }
@@ -139,7 +139,7 @@ const ButtonEllipsContact = styled.button`
 const LineStyledContacts = styled.div`
   
   border-bottom: 1px solid #828282;
-  margin-top: 32px;
+  margin-top: 24px;
   margin-bottom: 40px;
   max-width: 700px;
   width: 100%;

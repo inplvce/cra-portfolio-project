@@ -11,27 +11,41 @@ export const Slogan = () => {
         <StyledSlogan>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
-                    <StyledText>Let's start working together</StyledText>
-                    <StyledImageContact src={photo} alt=''/>
+                    <StyledBlocksSlogan>
+                        <div>
+                            <StyledText>Let's start working together</StyledText>
+                        </div>
+                        <div>
+                            <StyledImageContact src={photo} alt=''/>
+                        </div>
+                    </StyledBlocksSlogan>
+
                     </FlexWrapper>
             </Container>
         </StyledSlogan>
     );
 };
 
+const StyledBlocksSlogan = styled.span`
+display: flex;
+  align-items: center;
+  gap: 180px
+`
+
 const StyledSlogan = styled.section`
-  min-height: 480px;
+  min-height: 400px;
   height: 100%;
   background-color: #1A1B1D;
-  padding-top: 120px;
+  padding-top: 104px;
 
 
 `
 const StyledImageContact = styled.img`
-  max-width: 200px;
+  max-width: 160px;
   width: 100%;
   border-radius: 142.5px;
   object-fit: cover;
+
 
     `
 const StyledText  = styled.h4`

@@ -24,7 +24,7 @@ const StyledHeader = styled.header`
   background: rgb(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
   
-  padding: 30px;
+  padding: 30px 0;
   position: fixed;
   top: 0;
   left: 0;

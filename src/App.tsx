@@ -11,6 +11,7 @@ import {Slogan} from "./components/slogan/Slogan";
 import {Footer} from "./layout/footer/Footer";
 import React from "react";
 import {About} from "./layout/sections/about/About";
+import {ButtonEllipsMenu} from "./components/buttons/Button";
 // import {Testing} from "./layout/sections/testing/Testing";
 
 

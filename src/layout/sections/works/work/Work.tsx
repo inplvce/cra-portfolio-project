@@ -17,8 +17,10 @@ export const Work = (props: WorkPropsType) => {
             <Title>{props.title}</Title>
             <LineStyledWork/>
             <Text>{props.text}</Text>
-            <Link href={"#"}>Demo </Link>
-            <Link href={"#"}>Code </Link>
+            <BoxLinks>
+            {/*<Link href={"#"}>Demo </Link>*/}
+            {/*<Link href={"#"}>Code </Link>*/}
+            </BoxLinks>
         </StyledWork>
     );
 };
@@ -27,8 +29,10 @@ const StyledWork = styled.div`
   //background-color: snow;
   max-width: 540px;
   width: 100%;
+  //background-color: teal;
 `
 const Image = styled.img`
+  max-width: 540px;
   width: 100%;
   height: 540px;
   object-fit: cover;
@@ -37,9 +41,19 @@ const Image = styled.img`
 `
 
 const Link = styled.a`
-  background-color: #ffffff;
-  text-align: right;
-  font-size: 16px;
+  color: #828282;
+  font-size: 12px;
+
+
+`
+
+const BoxLinks = styled.div`
+  display: flex;
+  justify-content: right;
+  gap: 16px;
+
+//background-color: wheat;
+ 
 `
 
 const Title = styled.h5`

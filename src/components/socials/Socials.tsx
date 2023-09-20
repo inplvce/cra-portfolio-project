@@ -19,7 +19,7 @@ export const Socials = () => {
 
 const TitleSocialsStyled = styled.p`
   color: #828282;
-  margin-top: 40px;
+  margin-top: 32px;
   font-size: 12px;
   font-weight: 500;
 `

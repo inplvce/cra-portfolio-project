@@ -66,6 +66,8 @@ export const ButtonEllips = styled.button`
   height: 187px;
   flex-shrink: 3;
   margin-top: 20px;
+  
+  
 
   color: #FFF;
   font-family: Manrope,sans-serif;
@@ -85,14 +87,15 @@ export const ButtonEllips = styled.button`
 
 export const ButtonEllipsMenu = styled.button`
   position: fixed;
-  right: 4px;
+  right: 0px;
   top: 2px;
   border-radius: 44px;
   background: #1A1B1D;
-  width: 44px;
-  height: 44px;
+  width: 84px;
+  height: 84px;
   flex-shrink: 3;
-  margin-top: 20px;
+  margin: 20px 20px;
+  outline: 2px teal;
 
   color: #FFF;
   font-family: Manrope,sans-serif;

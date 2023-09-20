@@ -106,6 +106,12 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   input {
+    border: 0;
+    font-family: Manrope, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+
+    letter-spacing: 0.36px;
     outline: none;
   }
 
@@ -120,8 +126,7 @@ a {
 }
 
 textarea {
-  width: 90%; /* Ширина поля в процентах */
-  height: 200px; /* Высота поля в пикселах */
+  width: 100%; /* Ширина поля в процентах */
   resize: none; /* Запрещаем изменять размер */
   
   
@@ -129,10 +134,8 @@ textarea {
   border: none;
   color: #1A1B1D;
   font-family: Manrope,sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 225.023%; /* 40.504px */
   letter-spacing: 0.36px;
 }
 `

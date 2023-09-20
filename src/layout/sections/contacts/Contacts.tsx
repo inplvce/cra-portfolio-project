@@ -14,121 +14,124 @@ export const Contacts = () => {
                 <FlexWrapper justify={"space-between"}>
                     <StyledForm>
                         <LineStyledContacts/>
-                        <StyledLabel>01<StyledText>What’s your name?</StyledText></StyledLabel>
+                        {/*<StyledLabel>01</StyledLabel>*/}
+                        <StyledText>What’s your name?</StyledText>
                         <Field placeholder={"Ivan Ivanov *"}/>
                         <LineStyledContacts/>
-                        <StyledLabel>02<StyledText>What’s your email?</StyledText></StyledLabel>
+
+                        {/*<StyledLabel>02</StyledLabel>*/}
+                        <StyledText>What’s your email?</StyledText>
                         <Field placeholder={"ivan@gmail.com *"}/>
                         <LineStyledContacts/>
-                        <StyledLabel>03<StyledText>What's the name of your organization?</StyledText></StyledLabel>
+
+                        {/*<StyledLabel>03</StyledLabel>*/}
+                        <StyledText>What's the name of your organization?</StyledText>
                         <Field placeholder={"Ivan & Ivan"}/>
                         <LineStyledContacts/>
-                        <StyledLabel>04<StyledText>Your message...</StyledText></StyledLabel>
+
+                        {/*<StyledLabel>04</StyledLabel>*/}
+                        <StyledText>Your message...</StyledText>
                         {/*<Field type={'message'} contentEditable='true' placeholder={'Hello Uladzimir, let\'s start working together... *'} />*/}
-                        <StyledContentEdit contentEditable="true" placeholder={'Hello Uladzimir let\'s start working together... *'} as={"textarea"}></StyledContentEdit>
+                        <StyledContentEdit contentEditable="true"
+                                           placeholder={'Hello Uladzimir let\'s start working together... *'}
+                                           as={"textarea"}></StyledContentEdit>
+                        <LineStyledContacts/>
                         <StyledBlockForButton>
-                        <LineStyledContactsBottom/>
-                        <ButtonEllipsContact type={'submit'}>Send it!</ButtonEllipsContact>
+                            <ButtonEllipsContact type={'submit'}>Send it!</ButtonEllipsContact>
                         </StyledBlockForButton>
                     </StyledForm>
+
+
                     <StyledContacts>
                         <Details/>
                         <Socials/>
                     </StyledContacts>
                 </FlexWrapper>
             </Container>
-
         </StyledContact>
     );
 };
 
 const StyledContact = styled.section`
-  min-height: 50vh;
-  display: flex;
-  flex-wrap: revert;
-  background-color: #1A1B1D;
+  min-height: 100vh;
+  //flex-wrap: revert;
+  background-color:#1A1B1D;
 
-  
+
   //background-color: blanchedalmond;
 
 `
 
 const StyledForm = styled.form`
-  max-width: 800px;
+  max-width: 640px;
   width: 100%;
   display: flex;
+ justify-content: left;
   flex-direction: column;
+  align-items: start;
   gap: 10px;
-  object-fit: cover;
+  //object-fit: cover;
+  margin: 0 auto;
 `
 
 const StyledContacts = styled.div`
-max-width: 200px;
-  width: 100%;
-  margin-left: 24px;
+display: flex;
+  flex-direction: column;
+  
 
 `
 
 const Field = styled.input`
-  max-width: 340px;
+  color: #F0F4F6;
   width: 100%;
   background-color: #1A1B1D;
-  border: 0;
-  font-family: Manrope, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 225.023%; /* 40.504px */
-  letter-spacing: 0.36px;
-  margin-left: 54px;
-  color: #F0F4F6;
-
 
 `
 const StyledContentEdit = styled.textarea`
-  max-width: 640px;
-  height: 320px;
-  margin-top: 20px;
-  margin-left: 54px;
+  max-width: 100%;
+  height: 240px;
+  //margin-top: 20px;
+  //margin-left: 54px;
   color: #F0F4F6;
   outline: none;
   font-size: 24px;
 
 
-//
-//[contentEditable]:empty:before {
-//    
-//    content: attr(placeholder);
-//  color: #ffffff;
-//  }
-  
+  //
+  //[contentEditable]:empty:before {
+  //    
+  //    content: attr(placeholder);
+  //  color: #ffffff;
+  //  }
+
 `
 
 
 const StyledText = styled.text`
   color: #F0F4F6;
-  margin-left: 40px;
+  //margin-left: 40px;
   font-size: 24px;
 `
 const StyledLabel = styled.label`
   color: #828282;
   text-align: left;
   font-size: 12px;
-  
+  order: 0;
+
 
 
 `
 
 const ButtonEllipsContact = styled.button`
-  position: absolute;
-  right: 96px;
-  top: 40px;
+  //position: absolute;
+  //right: 96px;
+  //top: 40px;
 
   border-radius: 187px;
   background: dodgerblue;
   width: 187px;
   height: 187px;
-  margin-top: -116px;
+
 
   color: #F0F4F6;
   font-family: Manrope, sans-serif;
@@ -142,27 +145,22 @@ const ButtonEllipsContact = styled.button`
 
   &:hover {
     color: #F0F4F6;
-    background-color: rgba(65,81,253,1);
+    background-color: rgba(65, 81, 253, 1);
   }
 `
 const LineStyledContacts = styled.div`
-  
+
   border-bottom: 1px solid #828282;
-  margin-top: 24px;
+  margin-top: 40px;
   margin-bottom: 40px;
-  max-width: 700px;
   width: 100%;
 `
 
 const StyledBlockForButton = styled.div`
-  position: relative;
-  
-`
+  display: flex;
+  flex-direction: row;
+justify-content: right;
 
-const LineStyledContactsBottom = styled.div`
-  
-  border-bottom: 1px solid #828282;
-  margin-top: 40px;
-  max-width: 700px;
   width: 100%;
+  margin-top: -160px;
 `

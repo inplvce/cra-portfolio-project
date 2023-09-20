@@ -38,17 +38,17 @@ export const Footer = () => {
                     {/*        /!*</SocialLink>*!/*/}
                     {/*    </SocialItem>*/}
                     {/*</SocialList>*/}
-                    <StyledBlocksFoote>
-                        <CopyrightBlock>
-                            <Copyright>@ Uladzimir Kaniushenka, All Right Reserved.</Copyright>
-                        </CopyrightBlock>
+                    <StyledBlocksFooter>
                         <SocialsFooter>
                             <TextStyled href='Behance'>Behance</TextStyled>
                             <TextStyled href='Instagram'>Instagram</TextStyled>
                             <TextStyled href='LinkedIn'>LinkedIn</TextStyled>
                             <TextStyled href='Telegram'>Telegram</TextStyled>
                         </SocialsFooter>
-                    </StyledBlocksFoote>
+                        <CopyrightBlock>
+                            <Copyright>@ Uladzimir Kaniushenka, All Right Reserved.</Copyright>
+                        </CopyrightBlock>
+                    </StyledBlocksFooter>
 
                 </FlexWrapper>
             </Container>
@@ -56,10 +56,9 @@ export const Footer = () => {
     );
 };
 
-const StyledBlocksFoote = styled.span`
-  display: flex;
-  justify-content: space-between;
-
+const StyledBlocksFooter = styled.span`
+  
+text-align: center;
   max-width: 1140px;
   width: 100%;
   
@@ -95,9 +94,10 @@ const Copyright = styled.small`
 
 const SocialsFooter = styled.div`
   display: flex;
-  justify-content: right;
+  flex-direction: row;
+  justify-content: center;
   gap: 24px;
-  margin-left: 24px;
+
 
 
 
@@ -105,6 +105,7 @@ const SocialsFooter = styled.div`
 
 const TextStyled = styled.a`
   font-size: 12px;
+
 `
 
 const CopyrightBlock = styled.div`

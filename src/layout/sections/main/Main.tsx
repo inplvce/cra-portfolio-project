@@ -3,12 +3,13 @@ import styled from "styled-components";
 import photo from "../../../assets/images/myImg.jpg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 // import {inspect} from "util";
-import {ButtonStroke, ButtonOne} from "../../../components/buttons/Button";
+import {ButtonStroke, ButtonOne, ButtonEllipsMenu} from "../../../components/buttons/Button";
 import {Container} from "../../../components/container/Container";
 
 export const Main = () => {
     return (
         <StyledMain>
+            {/*<ButtonEllipsMenu>hi</ButtonEllipsMenu>*/}
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
                     <StyledNaming>

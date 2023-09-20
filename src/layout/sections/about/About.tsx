@@ -19,21 +19,31 @@ export const About = () => {
                             other technologies. I try to use current patterns and keep the code clean. In my spare time
                             I improve my English and learn new technologies.
                         </StyledParagraph>
-                            <div><ButtonEllips>About</ButtonEllips></div>
                         </StyledBlockRight>
                     {/*</StyledBlock>*/}
                 </FlexWrapper>
+                <ButtonStyled><ButtonEllips>About</ButtonEllips></ButtonStyled>
             </Container>
         </AboutSectionStyled>
     );
 };
 
+
+
+
 const ButtonStyled = styled.div`
-  position: relative;
+ max-width: 900px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: right;
+  
+  //background-color: teal;
 `
 
 const AboutSectionStyled = styled.section`
-  min-height: 60vh;
+  //display: flex;
+  //justify-content: center;
+  min-height: 50vh;
   padding-top: 64px;
   //background-color: pink;
   //max-width: 1140px;

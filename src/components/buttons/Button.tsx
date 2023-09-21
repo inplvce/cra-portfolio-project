@@ -66,6 +66,7 @@ export const ButtonEllips = styled.button`
   height: 187px;
   flex-shrink: 3;
   margin-top: 20px;
+  //transform: translateY(-16px);
   
   
 

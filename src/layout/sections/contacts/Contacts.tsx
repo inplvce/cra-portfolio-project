@@ -127,6 +127,7 @@ const ButtonEllipsContact = styled.button`
   //right: 96px;
   //top: 40px;
 
+
   border-radius: 187px;
   background: dodgerblue;
   width: 187px;
@@ -146,6 +147,7 @@ const ButtonEllipsContact = styled.button`
   &:hover {
     color: #F0F4F6;
     background-color: rgba(65, 81, 253, 1);
+    transform: scale(1.1);
   }
 `
 const LineStyledContacts = styled.div`

@@ -21,14 +21,21 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.font};
   }
-
   
-  a {
-    text-decoration: none;
-  }
   
   ul {
     list-style: none;
+    
+  }
+  
+  li {
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.2s ease;
+      //list-style-type: -moz-tamil;
+    }
   }
   
   button {
@@ -36,6 +43,13 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
     font-family: Manrope,sans-serif;
     font-size: 16px;
+
+    transition: all 0.5s ease;
+
+    &:hover {
+ 
+      transform: scale(1.1);
+    }
   }
 
   // section:nth-of-type(odd) {
@@ -115,7 +129,9 @@ export const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
+  
 a {
+  text-decoration: none;
   color: #F0F4F6;
   font-family: Manrope, sans-serif;
   font-size: 16px;
@@ -123,6 +139,13 @@ a {
   font-weight: 400;
   line-height: 225.023%; /* 40.504px */
   letter-spacing: 0.36px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+
 }
 
 textarea {
@@ -138,4 +161,16 @@ textarea {
   font-style: normal;
   letter-spacing: 0.36px;
 }
+
+img {
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+  }
+  
+}
+
+
 `

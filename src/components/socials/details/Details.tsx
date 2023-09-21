@@ -18,4 +18,6 @@ const TitleDetailssStyled = styled.p`
 color: #828282;
 font-size: 12px;
 font-weight: 500;
+
+
 `

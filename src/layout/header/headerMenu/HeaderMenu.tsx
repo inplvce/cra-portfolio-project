@@ -25,6 +25,10 @@ const StyledMenu = styled.nav`
       display: flex;
       gap: 40px;
       justify-content: space-around;
+
+      
+      
+   
       //max-width: 200px;
       //width: 100%;
     }
@@ -51,6 +55,6 @@ const Link = styled.a`
 
 
 const ListItem = styled.li`
-    
+
 
     `

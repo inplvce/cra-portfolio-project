@@ -36,7 +36,8 @@ const Image = styled.img`
   width: 100%;
   height: 540px;
   object-fit: cover;
-  margin-top: 64px;
+  margin-top: 48px;
+
 
 `
 

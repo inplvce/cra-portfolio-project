@@ -14,7 +14,7 @@ export const Contacts = () => {
                 <FlexWrapper justify={"space-between"}>
                     <StyledForm>
                         <LineStyledContacts/>
-                        {/*<StyledLabel>01</StyledLabel>*/}
+                        <StyledLabel>01</StyledLabel>
                         <StyledText>What’s your name?</StyledText>
                         <Field placeholder={"Ivan Ivanov *"}/>
                         <LineStyledContacts/>
@@ -54,6 +54,7 @@ export const Contacts = () => {
 
 const StyledContact = styled.section`
   min-height: 100vh;
+  margin: -2px 0;
   //flex-wrap: revert;
   background-color:#1A1B1D;
 

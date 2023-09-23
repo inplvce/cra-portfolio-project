@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu} from "./tabMenu/TabMenu";
@@ -13,6 +13,7 @@ import {ButtonStroke} from "../../../components/buttons/Button";
 const worksItems = ["All", "Design", "Development"]
 
 export const Works = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <StyledWorks>
             <Container>
@@ -35,8 +36,22 @@ export const Works = () => {
                         <Work title={"Name Project Two"}
                               src={'https://images.pexels.com/photos/7203727/pexels-photo-7203727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+
+                        {isOpen &&
+                            <Work title={"Name Project One"}
+                                  src={'https://images.pexels.com/photos/3782134/pexels-photo-3782134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
+                                  text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                        }
+                        {isOpen && <Work title={"Name Project One"}
+                                         src={'https://images.pexels.com/photos/3782134/pexels-photo-3782134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
+                                         text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>}
+
                     </FlexWrapper>
-                    <StyledButtonMoreWork><ButtonStrokeWorks>More Work</ButtonStrokeWorks></StyledButtonMoreWork>
+                    <StyledButtonMoreWork onClick={() => setIsOpen(prev => !prev)}>
+                        <ButtonStrokeWorks>
+                            {isOpen ? 'U+02198' : 'More Work'}
+                        </ButtonStrokeWorks>
+                    </StyledButtonMoreWork>
                 </SectionTitle>
             </Container>
 
@@ -57,20 +72,18 @@ const StyledWorks = styled.section`
   //background-color: snow;
 `
 
-const StyledTopTitleWork = styled.h2`
+const StyledTopTitleWork = styled.h3`
   width: 63px;
   flex-wrap: wrap;
   margin-top: 40px;
 
   color: #BCC2C5;
   font-family: Manrope, sans-serif;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150.023%; /* 28.504px */
   letter-spacing: -0.665px;
 `
-
 
 
 export const ButtonStrokeWorks = styled.button`
@@ -92,7 +105,7 @@ export const ButtonStrokeWorks = styled.button`
   transition: all 0.5s ease;
   margin-top: 80px;
   margin-bottom: 124px;
-  
+
   &:hover {
     border-radius: 40px;
     border: 2px solid dodgerblue;

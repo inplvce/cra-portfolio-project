@@ -90,6 +90,13 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: -1.12px;
   }
   
+  h3{
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+  }
+  
   h4 { //about | work | contact
     color: #1A1B1D;
     max-width: 680px;

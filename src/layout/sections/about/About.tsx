@@ -1,42 +1,66 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Container} from "../../../components/container/Container";
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {ButtonEllips} from "../../../components/buttons/Button";
 import {Line} from "../../../components/Line/Line";
+import {AboutCollapsed} from "./AboutCollapsed";
+
 
 export const About = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <AboutSectionStyled>
             <Container>
                 <StyledTopTitle>About</StyledTopTitle>
-               <Line/>
+                <Line/>
                 <FlexWrapper justify={"space-between"}>
                     {/*<StyledBlock>*/}
-                        <StyledBlockLeft><StyledAboutTitle>I am Designer & Developer based in Minsk,
-                            Belarus</StyledAboutTitle></StyledBlockLeft>
-                        <StyledBlockRight><StyledParagraph>Front-end developer with experience with JS/TS, React and
-                            other technologies. I try to use current patterns and keep the code clean. In my spare time
-                            I improve my English and learn new technologies.
-                        </StyledParagraph>
-                        </StyledBlockRight>
+                    <StyledBlockLeft><StyledAboutTitle>I am Designer & Developer based in Minsk,
+                        Belarus</StyledAboutTitle></StyledBlockLeft>
+                    <StyledBlockRight><StyledParagraph>Front-end developer with experience with JS/TS, React and
+                        other technologies. I try to use current patterns and keep the code clean. In my spare time
+                        I improve my English and learn new technologies.
+                    </StyledParagraph>
+                    </StyledBlockRight>
                     {/*</StyledBlock>*/}
                 </FlexWrapper>
-                <ButtonStyled><ButtonEllips>About</ButtonEllips></ButtonStyled>
+                {isOpen &&
+                    <FlexWrapper justify={"space-between"}>
+                    <AboutCollapsed
+                        title={"Design"}
+                        text={"Hello"}
+                        label={"1"}
+                    />
+                    <AboutCollapsed
+                        title={"Design"}
+                        text={"Hello"}
+                        label={"2"}
+                    />
+                </FlexWrapper>
+                }
+                <ButtonStyled
+                    onClick={() => setIsOpen(prev => !prev)}><ButtonEllips> {isOpen ? 'U+02198' : 'About'}</ButtonEllips></ButtonStyled>
             </Container>
         </AboutSectionStyled>
     );
 };
 
 
+const CollapsedStyled = styled.div`
+  transition: all 20s ease;
+
+  transform: scale(1.1);
+`
 
 
 const ButtonStyled = styled.div`
- max-width: 900px;
+  max-width: 900px;
   display: flex;
   flex-direction: initial;
   justify-content: right;
-  
+
   //background-color: teal;
 `
 
@@ -55,7 +79,7 @@ const AboutSectionStyled = styled.section`
 const StyledAboutTitle = styled.h4`
   margin-bottom: 24px;
   //background-color: pink;
- 
+
 `
 
 const StyledParagraph = styled.p`
@@ -78,12 +102,12 @@ const StyledBlock = styled.span`
   //margin-bottom: 80px;
   //flex-wrap: wrap;
 
-  
+
 `
 
 const StyledBlockLeft = styled.div`
   max-width: 600px;
-  
+
 `
 
 const StyledBlockRight = styled.div`
@@ -96,12 +120,13 @@ const StyledBlockRight = styled.div`
 const StyledTopTitle = styled.h3`
   color: #BCC2C5;
   font-family: Manrope, sans-serif;
-  font-size: 16px;
+
   font-style: normal;
   font-weight: 400;
   line-height: 150.023%; /* 28.504px */
   letter-spacing: -0.665px;
   margin-top: 40px;
+
 `
 
 

@@ -29,15 +29,16 @@ export const Main = () => {
 const StyledMain = styled.div`
   min-height: 93vh;
   display: flex;
-padding-top: 60px;
+padding-top: 80px;
 
 `
 
 const Photo = styled.img`
-  width: 410px;
+  width: 400px;
 max-width: 100%;
   object-fit: cover;
-
+padding-top: 40px;
+  padding-bottom: 8px;
   border-radius: 396px;
   order: -1;
 `

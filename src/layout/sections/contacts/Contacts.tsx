@@ -53,6 +53,8 @@ export const Contacts = () => {
 };
 
 const StyledContact = styled.section`
+  display: flex;
+  //justify-content: space-a;
   min-height: 100vh;
   margin: -2px 0;
   //flex-wrap: revert;
@@ -64,7 +66,7 @@ const StyledContact = styled.section`
 `
 
 const StyledForm = styled.form`
-  max-width: 640px;
+  max-width: 700px;
   width: 100%;
   display: flex;
  justify-content: left;
@@ -72,7 +74,7 @@ const StyledForm = styled.form`
   align-items: start;
   gap: 10px;
   //object-fit: cover;
-  margin: 0 auto;
+
 `
 
 const StyledContacts = styled.div`
@@ -153,7 +155,7 @@ const ButtonEllipsContact = styled.button`
 `
 const LineStyledContacts = styled.div`
 
-  border-bottom: 1px solid #828282;
+  border-bottom: 1px solid #333436;
   margin-top: 40px;
   margin-bottom: 40px;
   width: 100%;
@@ -165,5 +167,5 @@ const StyledBlockForButton = styled.div`
 justify-content: right;
 
   width: 100%;
-  margin-top: -160px;
+  margin-top: -80px;
 `

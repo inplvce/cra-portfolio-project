@@ -34,7 +34,7 @@ const StyledWork = styled.div`
 const Image = styled.img`
   max-width: 540px;
   width: 100%;
-  height: 540px;
+  max-height: 340px;
   object-fit: cover;
   margin-top: 48px;
 
@@ -78,6 +78,6 @@ margin-bottom: 80px;
 
 const LineStyledWork = styled.div`
   border-bottom: 1px solid #BCC2C5;
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 `

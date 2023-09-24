@@ -30,18 +30,23 @@ export const About = () => {
                     <FlexWrapper justify={"space-between"}>
                     <AboutCollapsed
                         title={"Design"}
-                        text={"Hello"}
+                        text={"I deliver and user-friendly digital designs. Solid company branding is the foundation of any succesful website and application."}
                         label={"1"}
                     />
                     <AboutCollapsed
-                        title={"Design"}
-                        text={"Hello"}
+                        title={"Development"}
+                        text={"I build scalable websites from scratch that fit seamlessly with design. My focus is on micro animations, transitions and interaction."}
                         label={"2"}
                     />
+                        <AboutCollapsed
+                            title={"The full package"}
+                            text={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+                            label={"3"}
+                        />
                 </FlexWrapper>
                 }
                 <ButtonStyled
-                    onClick={() => setIsOpen(prev => !prev)}><ButtonEllips> {isOpen ? 'U+02198' : 'About'}</ButtonEllips></ButtonStyled>
+                    onClick={() => setIsOpen(prev => !prev)}><ButtonEllips> {isOpen ? '⌃' : 'About'}</ButtonEllips></ButtonStyled>
             </Container>
         </AboutSectionStyled>
     );
@@ -60,6 +65,7 @@ const ButtonStyled = styled.div`
   display: flex;
   flex-direction: initial;
   justify-content: right;
+  margin-top: 40px;
 
   //background-color: teal;
 `
@@ -89,7 +95,7 @@ const StyledParagraph = styled.p`
   font-style: normal;
   line-height: 225.023%; /* 40.504px */
   letter-spacing: 0.36px;
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 
 `
 
@@ -128,5 +134,3 @@ const StyledTopTitle = styled.h3`
   margin-top: 40px;
 
 `
-
-

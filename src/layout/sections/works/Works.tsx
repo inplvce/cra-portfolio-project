@@ -30,26 +30,26 @@ export const Works = () => {
                     <TabMenu menuItems={worksItems}/>
                     <FlexWrapper justify={"space-between"}>
                         <Work title={"Name Project One"}
-                              src={'https://images.pexels.com/photos/3782134/pexels-photo-3782134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
+                              src={'https://images.pexels.com/photos/1312488/pexels-photo-1312488.jpeg?auto=compress&cs=tinysrgb&w=400'}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
 
                         <Work title={"Name Project Two"}
-                              src={'https://images.pexels.com/photos/7203727/pexels-photo-7203727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
+                              src={'https://images.pexels.com/photos/1255372/pexels-photo-1255372.jpeg?auto=compress&cs=tinysrgb&w=400'}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
 
                         {isOpen &&
                             <Work title={"Name Project One"}
-                                  src={'https://images.pexels.com/photos/3782134/pexels-photo-3782134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
+                                  src={'https://images.pexels.com/photos/1070534/pexels-photo-1070534.jpeg?auto=compress&cs=tinysrgb&w=400'}
                                   text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                         }
                         {isOpen && <Work title={"Name Project One"}
-                                         src={'https://images.pexels.com/photos/3782134/pexels-photo-3782134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
+                                         src={'https://images.pexels.com/photos/1416367/pexels-photo-1416367.jpeg?auto=compress&cs=tinysrgb&w=400'}
                                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>}
 
                     </FlexWrapper>
                     <StyledButtonMoreWork onClick={() => setIsOpen(prev => !prev)}>
                         <ButtonStrokeWorks>
-                            {isOpen ? 'U+02198' : 'More Work'}
+                            {isOpen ? '⌃' : 'More Work'}
                         </ButtonStrokeWorks>
                     </StyledButtonMoreWork>
                 </SectionTitle>
@@ -60,7 +60,7 @@ export const Works = () => {
 };
 
 
-const StyledButtonMoreWork = styled.div`
+const StyledButtonMoreWork = styled.div`;
   display: flex;
   justify-content: center;
 

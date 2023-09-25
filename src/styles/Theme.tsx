@@ -9,5 +9,12 @@ export const theme = {
 
         whiteFont: '#F0F4F6',
         font: "#1A1B1D"              //текст
+    },
+
+    media: {
+        tablet: 'screen and (max-width: 768px)',
+        mobile: 'screen and (max-width: 576px)',
     }
+
+
 }

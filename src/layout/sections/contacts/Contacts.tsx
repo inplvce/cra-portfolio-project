@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
 import {Container} from "../../../components/container/Container";
-import photo from "../../../assets/images/myImg.jpg";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Line} from "../../../components/Line/Line";
 import {Socials} from "../../../components/socials/Socials";
 import {Details} from "../../../components/socials/details/Details";
-import {theme} from "../../../styles/Theme";
+
 
 export const Contacts = () => {
     return (
@@ -15,23 +13,31 @@ export const Contacts = () => {
                 <FlexWrapper justify={"space-between"}>
                     <StyledForm>
                         <LineStyledContacts/>
+                        <div>
                         <StyledLabel>01</StyledLabel>
                         <StyledText>What’s your name?</StyledText>
+                        </div>
                         <Field placeholder={"Ivan Ivanov *"}/>
                         <LineStyledContacts/>
 
-                        {/*<StyledLabel>02</StyledLabel>*/}
+                        <div>
+                        <StyledLabel>02</StyledLabel>
                         <StyledText>What’s your email?</StyledText>
+                        </div>
                         <Field placeholder={"ivan@gmail.com *"}/>
                         <LineStyledContacts/>
 
-                        {/*<StyledLabel>03</StyledLabel>*/}
+                        <div>
+                        <StyledLabel>03</StyledLabel>
                         <StyledText>What's the name of your organization?</StyledText>
+                        </div>
                         <Field placeholder={"Ivan & Ivan"}/>
                         <LineStyledContacts/>
 
-                        {/*<StyledLabel>04</StyledLabel>*/}
+                        <div>
+                        <StyledLabel>04</StyledLabel>
                         <StyledText>Your message...</StyledText>
+                        </div>
                         {/*<Field type={'message'} contentEditable='true' placeholder={'Hello Uladzimir, let\'s start working together... *'} />*/}
                         <StyledContentEdit contentEditable="true"
                                            placeholder={'Hello Uladzimir let\'s start working together... *'}
@@ -87,8 +93,10 @@ display: flex;
 
 const Field = styled.input`
   color: #F0F4F6;
-  width: 100%;
   background-color: #1A1B1D;
+  //background-color: burlywood;
+  width: calc(100% - 50px);
+  margin-left: 54px;
 
 `
 const StyledContentEdit = styled.textarea`
@@ -99,15 +107,10 @@ const StyledContentEdit = styled.textarea`
   color: #F0F4F6;
   outline: none;
   font-size: 24px;
-
-
-  //
-  //[contentEditable]:empty:before {
-  //    
-  //    content: attr(placeholder);
-  //  color: #ffffff;
-  //  }
-
+  //background-color: teal;
+  width: calc(100% - 50px);
+  margin-left: 54px;
+  
 `
 
 
@@ -115,14 +118,25 @@ const StyledText = styled.text`
   color: #F0F4F6;
   //margin-left: 40px;
   font-size: 24px;
+  //background-color: teal;
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    width: calc(100%  / 5);
+  }
 `
 const StyledLabel = styled.label`
   color: #828282;
-  text-align: left;
+  text-align: start;
   font-size: 12px;
   order: 0;
-
-
+  max-height: 400px;
+margin-right: 40px;
+  padding-bottom: 80px;
+  //background-color: teal;
+  //background-color: teal;
 
 `
 

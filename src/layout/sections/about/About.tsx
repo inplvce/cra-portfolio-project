@@ -31,17 +31,17 @@ export const About = () => {
                     <AboutCollapsed
                         title={"Design"}
                         text={"I deliver and user-friendly digital designs. Solid company branding is the foundation of any succesful website and application."}
-                        label={"1"}
+                        label={"01"}
                     />
                     <AboutCollapsed
                         title={"Development"}
                         text={"I build scalable websites and applications from scratch that fit seamlessly with design."}
-                        label={"2"}
+                        label={"02"}
                     />
                         <AboutCollapsed
                             title={"The full package"}
                             text={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
-                            label={"3"}
+                            label={"03"}
                         />
                 </FlexWrapper>
                 }

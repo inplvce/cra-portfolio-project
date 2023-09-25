@@ -4,9 +4,9 @@ import {theme} from "../../../styles/Theme";
 
 
 
-export const HeaderMenu = (props: {menuItems: Array<string>}) => {
+export const MobileMenu = (props: {menuItems: Array<string>}) => {
     return (
-        <StyledMenu>
+        <StyledMobileMenu>
             <ul>
                 {props.menuItems.map((item, index)=>{
                     return <ListItem key={index}>
@@ -16,11 +16,16 @@ export const HeaderMenu = (props: {menuItems: Array<string>}) => {
                     </ListItem>
                 })}
             </ul>
-        </StyledMenu>
+        </StyledMobileMenu>
     );
 };
 
-const StyledMenu = styled.nav`
+const StyledMobileMenu = styled.nav`
+  
+  <BurgerButton>
+    <span></span>
+  </BurgerButton>
+  
     ul {
       display: flex;
       gap: 40px;
@@ -31,8 +36,10 @@ const StyledMenu = styled.nav`
   @media ${theme.media.tablet} {
     display:  none;
   }
-  
-  
+`
+
+const BurgerButton = styled.button`
+
 `
 
 const Link = styled.a`

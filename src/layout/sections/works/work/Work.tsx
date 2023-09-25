@@ -13,45 +13,74 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
     return (
         <StyledWork>
+            <BackgraungForImg>
             <Image src={props.src} alt=""/>
+            </BackgraungForImg>
             <Title>{props.title}</Title>
             <LineStyledWork/>
             <Text>{props.text}</Text>
-            <BoxLinks>
-            {/*<Link href={"#"}>Demo </Link>*/}
-            {/*<Link href={"#"}>Code </Link>*/}
-            </BoxLinks>
+
+                {/*<Link href={"#"}>Demo</Link>*/}
+                {/*<Link href={"#"}>Code</Link>*/}
+
         </StyledWork>
     );
 };
 
 const StyledWork = styled.div`
-  //background-color: snow;
-  max-width: 540px;
+  max-width: 520px;
   width: 100%;
+  max-height: 800px;
+  height: 100%;
+  margin-top: 80px;
+  margin-bottom: 64px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+  //&::before {
+  //  content: "";
+  //  display: inline-block;
+  //  width: 100%;
+  //  height: 1px;
+  //
+   text-align: center;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+  //  position: absolute;
+  //  bottom: 0;
+  //  z-index: -1;
   //background-color: teal;
+  }
+  //}
+
+  
 `
 const Image = styled.img`
-  max-width: 540px;
-  width: 100%;
-  max-height: 340px;
+  max-width: 100%;
   object-fit: cover;
-  margin-top: 48px;
+  border-radius: 4px;
+
 
 
 `
 
-const Link = styled.a`
-  color: #828282;
-  font-size: 12px;
+const BackgraungForImg = styled.div`
+  display: flex;
+  justify-content: center;
+
+  background-color: rgba(203, 206, 206, 0.42);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
 
 
 `
 
 const BoxLinks = styled.div`
-  display: flex;
-  justify-content: right;
-  gap: 16px;
+
+
 
 //background-color: wheat;
  
@@ -59,6 +88,7 @@ const BoxLinks = styled.div`
 
 const Title = styled.h5`
   text-align: left;
+  margin-top: 40px;
 `
 
 const Text = styled.p`
@@ -78,6 +108,6 @@ margin-bottom: 80px;
 
 const LineStyledWork = styled.div`
   border-bottom: 1px solid #BCC2C5;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 `

@@ -33,14 +33,14 @@ const LabelStyled = styled.label`
 
 const LineAboutCollapsed = styled.div`
   border-bottom: 1px solid #BCC2C5;
-  margin-top: 32px;
+  margin-top: 8px;
   margin-bottom: 24px;
 `
 
 const NameSkillCollapse = styled.h5`
 margin-bottom: 40px;
 `
-const TextCollapsed = styled.text`
-margin-bottom: 180px;
+const TextCollapsed = styled.p`
 
+margin-bottom: 40px;
 `

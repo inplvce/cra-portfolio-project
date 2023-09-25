@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Details} from "./details/Details";
+import {theme} from "../../styles/Theme";
 
 export const Socials = () => {
     return (
@@ -23,3 +24,4 @@ const TitleSocialsStyled = styled.p`
   font-size: 12px;
   font-weight: 500;
 `
+

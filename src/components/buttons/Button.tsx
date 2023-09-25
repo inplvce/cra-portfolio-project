@@ -13,7 +13,7 @@ export const ButtonOne = styled.button`
   color: #FFF;
   text-align: center;
   font-family: Manrope, sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -25,7 +25,7 @@ export const ButtonOne = styled.button`
   
   &:hover {
     color: white;
-    background-color: dodgerblue;
+    background-color: rgba(65, 81, 253, 1);
   }
 
 `
@@ -52,6 +52,7 @@ export const ButtonStroke = styled.button`
   &:hover {
     border-radius: 40px;
     border: 2px solid dodgerblue;
+
   }
 
 `
@@ -62,17 +63,17 @@ export const ButtonEllips = styled.button`
   top: 2px;
   border-radius: 187px;
   background: #1A1B1D;
-  width: 187px;
-  height: 187px;
+  width: 164px;
+  height: 164px;
   flex-shrink: 3;
   margin-top: -32px;
-  //transform: translateY(-16px);
+  transform: translateY(-16px);
   
   
 
   color: #FFF;
   font-family: Manrope,sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 225.023%; /* 40.504px */
@@ -82,13 +83,13 @@ export const ButtonEllips = styled.button`
 
   &:hover {
     color: white;
-    background-color: dodgerblue;
+    background-color: rgba(65, 81, 253, 1);
   }
 `
 
 export const ButtonEllipsMenu = styled.button`
   position: fixed;
-  right: 0px;
+  right: 0;
   top: 2px;
   border-radius: 44px;
   background: #1A1B1D;

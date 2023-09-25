@@ -1,6 +1,11 @@
 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 
+<g id="backTop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <path d="M1 35V1H35" stroke="black" stroke-width="1.41667" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</g>
 
 <g id="telegram">
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

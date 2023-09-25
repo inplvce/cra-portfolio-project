@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 // import {inspect} from "util";
 import {ButtonStroke, ButtonOne, ButtonEllipsMenu} from "../../../components/buttons/Button";
 import {Container} from "../../../components/container/Container";
+import {theme} from "../../../styles/Theme";
 
 export const Main = () => {
     return (
@@ -13,7 +14,7 @@ export const Main = () => {
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
                     <StyledNaming>
-                        <Name>Uladzimir Kaniushenka</Name>
+                        <Name><LineForTextMain>Uladzimir Kaniushenka</LineForTextMain></Name>
                         <MainTitle>Developer & Designer</MainTitle>
                         <Paragraph>Make designs, visual identities, apps, websites, social media.</Paragraph>
                         <ButtonOne>See my work</ButtonOne>
@@ -29,22 +30,37 @@ export const Main = () => {
 const StyledMain = styled.div`
   min-height: 93vh;
   display: flex;
-padding-top: 80px;
+  padding-top: 80px;
 
 `
 
 const Photo = styled.img`
   width: 400px;
-max-width: 100%;
+  max-width: 100%;
   object-fit: cover;
-padding-top: 40px;
+  padding-top: 40px;
   padding-bottom: 8px;
   border-radius: 396px;
   order: -1;
 `
+// const PhotoWrapper = styled.div`
+// position: relative;
+//
+// &::before {
+//   content: "";
+//   width: 450px;
+//   height: 40px;
+//   border-radius: 396px;
+//   border: 5px solid ${theme.colors.whiteFont};
+//
+//   position: absolute;
+//
+// }
+//
+// `
 
 const MainTitle = styled.h1`
-    
+  
 `
 
 const Name = styled.h2`
@@ -56,6 +72,23 @@ const Paragraph = styled.p`
 `
 
 const StyledNaming = styled.div`
-text-align: left;
+  text-align: left;
 
+`
+
+const LineForTextMain = styled.span`
+position: relative;
+  z-index: 0;
+  
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background-color: ${theme.colors.whiteFont};
+    
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
 `

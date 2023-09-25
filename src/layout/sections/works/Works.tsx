@@ -9,6 +9,7 @@ import {TitleWorkStyled, Work} from "./work/Work";
 import {Container} from "../../../components/container/Container";
 import {Line} from "../../../components/Line/Line";
 import {ButtonStroke} from "../../../components/buttons/Button";
+import {theme} from "../../../styles/Theme";
 
 const worksItems = ["All", "Design", "Development"]
 
@@ -27,22 +28,22 @@ export const Works = () => {
                     {/*<ButtonOneSmall>All</ButtonOneSmall>*/}
                     {/*<ButtonStrokeSmall>Design</ButtonStrokeSmall>*/}
                     {/*<ButtonStrokeSmallDevelopment>Development</ButtonStrokeSmallDevelopment>*/}
-                    <TabMenu menuItems={worksItems}/>
+                    <TabContainer><TabMenu menuItems={worksItems}/></TabContainer>
                     <FlexWrapper justify={"space-between"}>
-                        <Work title={"Name Project One"}
+                        <Work title={"Project ONE"}
                               src={'https://images.pexels.com/photos/1312488/pexels-photo-1312488.jpeg?auto=compress&cs=tinysrgb&w=400'}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
 
-                        <Work title={"Name Project Two"}
+                        <Work title={"Project Two"}
                               src={'https://images.pexels.com/photos/1255372/pexels-photo-1255372.jpeg?auto=compress&cs=tinysrgb&w=400'}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
 
                         {isOpen &&
-                            <Work title={"Name Project One"}
+                            <Work title={"Project GOOD"}
                                   src={'https://images.pexels.com/photos/1070534/pexels-photo-1070534.jpeg?auto=compress&cs=tinysrgb&w=400'}
                                   text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                         }
-                        {isOpen && <Work title={"Name Project One"}
+                        {isOpen && <Work title={"Project"}
                                          src={'https://images.pexels.com/photos/1416367/pexels-photo-1416367.jpeg?auto=compress&cs=tinysrgb&w=400'}
                                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>}
 
@@ -59,10 +60,14 @@ export const Works = () => {
     );
 };
 
+const TabContainer = styled.div`
+margin-left: 24px;
+`
 
 const StyledButtonMoreWork = styled.div`;
   display: flex;
   justify-content: center;
+
 
 `
 
@@ -70,6 +75,7 @@ const StyledWorks = styled.section`
   min-height: 100vh;
   padding-top: 120px;
   //background-color: snow;
+  
 `
 
 const StyledTopTitleWork = styled.h3`
@@ -90,7 +96,7 @@ export const ButtonStrokeWorks = styled.button`
   width: 180px;
   height: 80px;
   flex-shrink: 0;
-  color: #2B2C2D;
+  color: white;
   text-align: center;
   font-family: Manrope, sans-serif;
   font-size: 16px;
@@ -99,14 +105,13 @@ export const ButtonStrokeWorks = styled.button`
   line-height: normal;
   letter-spacing: 0.54px;
   text-transform: capitalize;
-
   border-radius: 40px;
-  border: 2px solid #E9E9E9;
   transition: all 0.5s ease;
   margin-top: 80px;
   margin-bottom: 124px;
+  background-color: #1A1B1D;
 
   &:hover {
     border-radius: 40px;
-    border: 2px solid dodgerblue;
+    background-color: rgba(37, 72, 248, 0.83);
 `

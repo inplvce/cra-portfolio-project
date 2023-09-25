@@ -74,6 +74,6 @@ const StyledText  = styled.h4`
   color: #F0F4F6;
   text-align: left;
   margin-top: 48px;
-  font-size: 48px;
+  font-size: 56px;
 
 `

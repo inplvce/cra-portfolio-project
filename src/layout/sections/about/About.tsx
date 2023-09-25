@@ -17,8 +17,8 @@ export const About = () => {
                 <Line/>
                 <FlexWrapper justify={"space-between"}>
                     {/*<StyledBlock>*/}
-                    <StyledBlockLeft><StyledAboutTitle>I am Designer & Developer based in Minsk,
-                        Belarus</StyledAboutTitle></StyledBlockLeft>
+                    <StyledBlockLeft><StyledAboutTitle>I am Designer & Developer <>based in Minsk,
+                        Belarus</></StyledAboutTitle></StyledBlockLeft>
                     <StyledBlockRight><StyledParagraph>Front-end developer with experience with JS/TS, React and
                         other technologies. I try to use current patterns and keep the code clean. In my spare time
                         I improve my English and learn new technologies.
@@ -35,7 +35,7 @@ export const About = () => {
                     />
                     <AboutCollapsed
                         title={"Development"}
-                        text={"I build scalable websites from scratch that fit seamlessly with design. My focus is on micro animations, transitions and interaction."}
+                        text={"I build scalable websites and applications from scratch that fit seamlessly with design."}
                         label={"2"}
                     />
                         <AboutCollapsed
@@ -52,6 +52,9 @@ export const About = () => {
     );
 };
 
+// const LightText = styled.text`
+// font-weight: 100;
+// `
 
 const CollapsedStyled = styled.div`
   transition: all 20s ease;

@@ -44,11 +44,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Manrope,sans-serif;
     font-size: 16px;
 
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 
     &:hover {
- 
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 
@@ -147,12 +146,6 @@ a {
   line-height: 225.023%; /* 40.504px */
   letter-spacing: 0.36px;
   transition: all 0.5s ease;
-
-  &:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-  }
-
 }
 
 textarea {
@@ -163,19 +156,22 @@ textarea {
   background-color: #1A1B1D;
   border: none;
   color: #1A1B1D;
-  font-family: Manrope,sans-serif;
+  font-family: Manrope, sans-serif;
   font-size: 24px;
   font-style: normal;
   letter-spacing: 0.36px;
 }
 
 img {
-  transition: all 0.5s ease;
+  //transition: all 0.5s ease;
 
-  &:hover {
-    transform: scale(1.01);
-    transition: all 0.3s ease;
-  }
+  //&:hover {
+  //  transform: scale(1.01);
+  //  transition: all 0.3s ease;
+  //}
+  
+  
+
   
 }
 

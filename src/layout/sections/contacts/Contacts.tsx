@@ -6,6 +6,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Line} from "../../../components/Line/Line";
 import {Socials} from "../../../components/socials/Socials";
 import {Details} from "../../../components/socials/details/Details";
+import {theme} from "../../../styles/Theme";
 
 export const Contacts = () => {
     return (
@@ -132,7 +133,7 @@ const ButtonEllipsContact = styled.button`
 
 
   border-radius: 187px;
-  background: dodgerblue;
+  background: rgba(65, 81, 253, 1);
   width: 187px;
   height: 187px;
 
@@ -149,8 +150,9 @@ const ButtonEllipsContact = styled.button`
 
   &:hover {
     color: #F0F4F6;
-    background-color: rgba(65, 81, 253, 1);
-    transform: scale(1.1);
+    transition: all 0.5s ease;
+    background-color: rgb(58, 59, 196);
+
   }
 `
 const LineStyledContacts = styled.div`

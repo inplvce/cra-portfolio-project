@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {ButtonEllips} from "../../../components/buttons/Button";
 import {Line} from "../../../components/Line/Line";
 import {AboutCollapsed} from "./AboutCollapsed";
+import {theme} from "../../../styles/Theme";
 
 
 export const About = () => {
@@ -19,9 +20,9 @@ export const About = () => {
                     {/*<StyledBlock>*/}
                     <StyledBlockLeft><StyledAboutTitle>I am Designer & Developer <>based in Minsk,
                         Belarus</></StyledAboutTitle></StyledBlockLeft>
-                    <StyledBlockRight><StyledParagraph>Front-end developer with experience with JS/TS, React and
+                    <StyledBlockRight><StyledParagraph><p>Front-end developer with experience with JS/TS, React and
                         other technologies. I try to use current patterns and keep the code clean. In my spare time
-                        I improve my English and learn new technologies.
+                        I improve my English and learn new technologies.</p>
                     </StyledParagraph>
                     </StyledBlockRight>
                     {/*</StyledBlock>*/}
@@ -68,7 +69,7 @@ const ButtonStyled = styled.div`
   display: flex;
   flex-direction: initial;
   justify-content: right;
-  margin-top: 40px;
+  margin-top: 80px;
 
   //background-color: teal;
 `
@@ -136,4 +137,8 @@ const StyledTopTitle = styled.h3`
   letter-spacing: -0.665px;
   margin-top: 40px;
 
+
+  @media ${theme.media.mobile} {
+    margin-top: 0;
+  }
 `

@@ -25,7 +25,6 @@ const StyledMenu = styled.nav`
       display: flex;
       gap: 40px;
       justify-content: space-around;
-
     }
   
   @media ${theme.media.tablet} {

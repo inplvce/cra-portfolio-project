@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
 import {LinkStyled} from "../../../../components/Link";
+import {theme} from "../../../../styles/Theme";
 
 
 
@@ -48,5 +49,8 @@ const ListItem = styled.li`
     transition: all 0.3s ease;
   }
   
+  @media ${theme.media.mobile} {
+    font-size: 12px;
+  }
 `
 

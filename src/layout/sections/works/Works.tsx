@@ -89,6 +89,10 @@ const StyledTopTitleWork = styled.h3`
   font-weight: 400;
   line-height: 150.023%; /* 28.504px */
   letter-spacing: -0.665px;
+  
+  @media ${theme.media.mobile} {
+    margin-top: 0;
+  }
 `
 
 

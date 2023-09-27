@@ -36,6 +36,11 @@ export const GlobalStyle = createGlobalStyle`
       transition: all 0.2s ease;
       //list-style-type: -moz-tamil;
     }
+
+    @media ${theme.media.mobile} {
+      font-size: 14px;
+    }
+    
   }
   
   button {
@@ -48,6 +53,10 @@ export const GlobalStyle = createGlobalStyle`
 
     &:hover {
       transform: scale(1.05);
+    }
+
+    @media ${theme.media.mobile} {
+      font-size: 14px;
     }
   }
 
@@ -67,26 +76,48 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     line-height: 225.023%; /* 40.504px */
     letter-spacing: 0.36px;
+
+    @media ${theme.media.mobile} {
+      font-size: 14px;
+    }
   }
 
+  
   h1 {
-    color: #111;
+    color: #1A1B1D;
     font-family: Manrope, sans-serif;
     font-size: 3.5em;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 67.2px */
-    letter-spacing: -1.12px;
+    letter-spacing: -0.96px;
+    
+    @media ${theme.media.mobile} {
+      font-size: 32px;
+      //text-align: center;
+      font-weight: 380;
+      letter-spacing: -0.96px;
+      line-height: 150%; /* 67.2px */
+    }
   }
   
   h2 {
-    color: #111;
+    color: #1A1B1D;
     font-family: Manrope, sans-serif;
     font-size: 3.5em;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 67.2px */
-    letter-spacing: -1.12px;
+    letter-spacing: -0.96px;
+
+    @media ${theme.media.mobile} {
+      font-size: 48px;
+      //text-align: center;
+    font-weight: 380;
+      letter-spacing: -0.96px;
+      line-height: 100%; /* 67.2px */
+      margin-bottom: 4px;
+    }
   }
   
   h3{
@@ -109,6 +140,10 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: -0.96px;
     display: flex;
     margin-bottom: 64px;
+
+    @media ${theme.media.mobile} {
+      font-size: 32px;
+    }
 
     //background-color: pink;
   }

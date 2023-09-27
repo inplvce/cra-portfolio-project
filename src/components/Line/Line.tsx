@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 export const Line = () => {
     return (
@@ -14,4 +15,8 @@ const LineStyled = styled.div`
   margin-top: 8px;
   margin-bottom: 80px;
 
+  @media ${theme.media.mobile} {
+    margin-top: 8px;
+    margin-bottom: 40px;
+  }
 `

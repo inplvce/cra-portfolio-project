@@ -21,13 +21,19 @@ export const ButtonOne = styled.button`
   letter-spacing: 0.54px;
   //text-transform: uppercase;
   transition: all 0.5s ease;
-  margin-right: 16px;
+  margin: 6px;
   
   &:hover {
     color: white;
     background-color: rgba(65, 81, 253, 1);
   }
-
+  
+  @media ${theme.media.mobile} {
+    width: 148px;
+    height: 72px;
+    font-size: 14px;
+    margin: 4px;
+  }
 `
 export const ButtonStroke = styled.button`
   width: 180px;
@@ -47,6 +53,7 @@ export const ButtonStroke = styled.button`
   border: 2px solid #E9E9E9;
   transition: all 0.5s ease;
   margin-top: 16px;
+  margin: 6px;
 
   
   &:hover {
@@ -55,6 +62,12 @@ export const ButtonStroke = styled.button`
 
   }
 
+  @media ${theme.media.mobile} {
+    width: 148px;
+    height: 72px;
+    font-size: 14px;
+    margin: 4px;
+  }
 `
 
 export const ButtonEllips = styled.button`
@@ -84,6 +97,13 @@ export const ButtonEllips = styled.button`
   &:hover {
     color: white;
     background-color: rgba(65, 81, 253, 1);
+  }
+
+  @media ${theme.media.mobile} {
+    width: 124px;
+  height: 124px;
+    font-size: 14px;
+    margin-top: -60px
   }
 `
 

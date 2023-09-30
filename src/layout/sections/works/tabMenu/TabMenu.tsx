@@ -24,10 +24,11 @@ const StyledTabMenu = styled.nav`
   ul {
 
     display: flex;
-    gap: 32px;
-    //justify-content: space-around;
-    text-align: right;
-    
+    max-width: 300px;
+    width: 100%;
+    //border: teal 2px solid;
+    margin: 0 auto 40px;
+    gap: 56px;
   }
 `
 const ListItem = styled.li`
@@ -38,10 +39,10 @@ const ListItem = styled.li`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.54px;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   position: relative;
-  margin-right: 24px;
-  margin-bottom: 40px;
+
+
 
   transition: all 0.5s ease;
 
@@ -50,7 +51,7 @@ const ListItem = styled.li`
   }
   
   @media ${theme.media.mobile} {
-    font-size: 12px;
+    font-size: 16px;
   }
 `
 

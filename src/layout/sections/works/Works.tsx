@@ -29,7 +29,8 @@ export const Works = () => {
                     {/*<ButtonStrokeSmall>Design</ButtonStrokeSmall>*/}
                     {/*<ButtonStrokeSmallDevelopment>Development</ButtonStrokeSmallDevelopment>*/}
                     <TabContainer><TabMenu menuItems={worksItems}/></TabContainer>
-                    <FlexWrapper justify={"space-between"}>
+                    <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
+                        {/*<GridWrapper>*/}
                         <Work title={"Project ONE"}
                               src={'https://images.pexels.com/photos/1312488/pexels-photo-1312488.jpeg?auto=compress&cs=tinysrgb&w=400'}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
@@ -47,6 +48,7 @@ export const Works = () => {
                                          src={'https://images.pexels.com/photos/1416367/pexels-photo-1416367.jpeg?auto=compress&cs=tinysrgb&w=400'}
                                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>}
 
+                    {/*</GridWrapper>*/}
                     </FlexWrapper>
                     <StyledButtonMoreWork onClick={() => setIsOpen(prev => !prev)}>
                         <ButtonStrokeWorks>
@@ -61,7 +63,7 @@ export const Works = () => {
 };
 
 const TabContainer = styled.div`
-margin-left: 24px;
+  margin-left: 24px;
 `
 
 const StyledButtonMoreWork = styled.div`;
@@ -72,16 +74,17 @@ const StyledButtonMoreWork = styled.div`;
 `
 
 const StyledWorks = styled.section`
-  min-height: 100vh;
-  padding-top: 120px;
-  //background-color: snow;
+${FlexWrapper} {
+  gap: 30px;
   
+}
+  //background-color: snow;
+
 `
 
 const StyledTopTitleWork = styled.h3`
   width: 63px;
   flex-wrap: wrap;
-  margin-top: 40px;
 
   color: #BCC2C5;
   font-family: Manrope, sans-serif;
@@ -89,9 +92,14 @@ const StyledTopTitleWork = styled.h3`
   font-weight: 400;
   line-height: 150.023%; /* 28.504px */
   letter-spacing: -0.665px;
+
+  @media ${theme.media.tablet} {
+    margin-top: -24px;
+  }
+\`
   
   @media ${theme.media.mobile} {
-    margin-top: 0;
+    margin-top: -40px;
   }
 `
 

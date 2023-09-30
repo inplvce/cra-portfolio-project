@@ -69,21 +69,27 @@ const ButtonStyled = styled.div`
   display: flex;
   flex-direction: initial;
   justify-content: right;
-  margin-top: 80px;
+  margin-top: 24px;
 
-  //background-color: teal;
+  @media ${theme.media.tablet} {
+
+
+  }
+
+  @media ${theme.media.mobile} {
+    margin-top: 80px;
+
+  }
 `
 
 const AboutSectionStyled = styled.section`
-  //display: flex;
-  //justify-content: center;
   min-height: 50vh;
-  padding-top: 64px;
-  //background-color: pink;
-  //max-width: 1140px;
-  //width: 100%;
-  //flex;
-  //background-color: gainsboro;
+  
+  @media ${theme.media.tablet} {
+    
+    
+  }
+
 `
 
 const StyledAboutTitle = styled.h4`
@@ -95,25 +101,11 @@ const StyledAboutTitle = styled.h4`
 const StyledParagraph = styled.p`
   color: #1A1B1D;
   font-family: Manrope, sans-serif;
-  font-size: 1em;
   font-style: normal;
-  line-height: 225.023%; /* 40.504px */
-  letter-spacing: 0.36px;
   margin-bottom: 64px;
 
 `
 
-const StyledBlock = styled.span`
-  //display: flex;
-  //justify-content: space-between;
-  //margin-top: 80px;
-  ////background-color: skyblue;
-  //
-  //margin-bottom: 80px;
-  //flex-wrap: wrap;
-
-
-`
 
 const StyledBlockLeft = styled.div`
   max-width: 600px;
@@ -138,7 +130,7 @@ const StyledTopTitle = styled.h3`
   margin-top: 40px;
 
 
-  @media ${theme.media.mobile} {
-    margin-top: 0;
-  }
+  // @media ${theme.media.mobile} {
+  //   margin-top: 0;
+  // }
 `

@@ -4,6 +4,7 @@ import {Container} from "../../../components/container/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Socials} from "../../../components/socials/Socials";
 import {Details} from "../../../components/socials/details/Details";
+import {theme} from "../../../styles/Theme";
 
 
 export const Contacts = () => {
@@ -80,13 +81,22 @@ const StyledForm = styled.form`
   flex-direction: column;
   align-items: start;
   gap: 10px;
-  //object-fit: cover;
+
+  @media ${theme.media.tablet} {
+    
+  }
+
+  @media ${theme.media.tablet} {
+
+  }
 
 `
 
 const StyledContacts = styled.div`
 display: flex;
   flex-direction: column;
+  
+  @media ${}
   
 
 `

@@ -7,6 +7,7 @@ import {ButtonStroke, ButtonOne, ButtonEllipsMenu} from "../../../components/but
 import {Container} from "../../../components/container/Container";
 import {theme} from "../../../styles/Theme";
 
+
 export const Main = () => {
     return (
         <StyledMain>
@@ -36,6 +37,7 @@ const StyledMain = styled.div`
     display: inline-block;
     justify-content: space-between;
   }
+
 `
 
 
@@ -43,21 +45,25 @@ const StyledMain = styled.div`
 const Photo = styled.img`
 width: 400px;
 
-  padding-top: 40px;
+  //padding-top: 40px;
   padding-bottom: 8px;
   border-radius: 100%;
   order: -1;
-  
+  //border: teal 2px solid;
+object-fit: cover;
+  aspect-ratio: 1/1;
+
+
   
   @media ${theme.media.mobile} {
     margin-top: -40px;
     max-width: 200px;
     max-height: 100%;
-    padding-bottom: 24px;
+    //padding-bottom: 24px;
     margin-left: 20%;
     margin-right: 20%;
-
   }
+
 `
 // const PhotoWrapper = styled.div`
 // position: relative;
@@ -89,24 +95,10 @@ const Paragraph = styled.p`
   margin-top: 24px;
   margin-bottom: 40px;
 
-  @media ${theme.media.mobile} {
-    width: 100%;
-    margin-top: 16px;
-    margin-bottom: 24px;
-    text-align: center;
-
-  }
 `
 
 const StyledNaming = styled.div`
   text-align: left;
-  
-  
-  
-  @media ${theme.media.mobile} {
-text-align: center;
-
-  }
 
 `
 

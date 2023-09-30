@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {Line} from "../../../../components/Line/Line";
+import {theme} from "../../../../styles/Theme";
+
 
 type WorkPropsType = {
     title: string
@@ -12,54 +13,47 @@ type WorkPropsType = {
 
 export const Work = (props: WorkPropsType) => {
     return (
+
         <StyledWork>
-            <BackgraungForImg>
+            <div>
             <Image src={props.src} alt=""/>
-            </BackgraungForImg>
             <Title>{props.title}</Title>
             <LineStyledWork/>
             <Text>{props.text}</Text>
-
                 {/*<Link href={"#"}>Demo</Link>*/}
                 {/*<Link href={"#"}>Code</Link>*/}
-
+            </div>
         </StyledWork>
+
     );
 };
 
 const StyledWork = styled.div`
-  max-width: 520px;
-  width: 100%;
-  max-height: 800px;
-  height: 100%;
-  margin-top: 80px;
-  margin-bottom: 64px;
+  width: 320px;
   transition: all 0.3s ease;
-  
-  &:hover {
-  //&::before {
-  //  content: "";
-  //  display: inline-block;
-  //  width: 100%;
-  //  height: 1px;
-  //
-   text-align: center;
-    transition: all 0.3s ease;
-    transform: scale(1.05);
-  //  position: absolute;
-  //  bottom: 0;
-  //  z-index: -1;
-  //background-color: teal;
-  }
-  //}
+  flex-grow: 1;
+  background-color: ${theme.colors.myLightGray};
+  padding: 8px 8px;
+  border-radius: 4px;
 
+
+  &:hover {
+
+    text-align: center;
+    transition: all 0.3s ease;
+    transform: scale(1.01);
+  }
+
+  @media ${theme.media.desktop} {
+    width: 440px;
+  }
   
 `
 const Image = styled.img`
-  max-width: 100%;
-  object-fit: cover;
-  border-radius: 4px;
-
+  width: 100%;
+  //object-fit: cover;
+  //border-radius: 4px;
+  aspect-ratio: 1/1;
 
 
 `
@@ -74,6 +68,8 @@ const BackgraungForImg = styled.div`
   width: 100%;
   max-height: 400px;
   height: 100%;
+  aspect-ratio: 1/1;
+  
 
 
 `
@@ -97,7 +93,6 @@ const Text = styled.p`
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 225.023%; /* 40.504px */
   letter-spacing: 0.36px;
   text-align: left;
 `
@@ -110,4 +105,12 @@ const LineStyledWork = styled.div`
   border-bottom: 1px solid #BCC2C5;
   margin-top: 24px;
   margin-bottom: 24px;
+  filter: blur(1px);
+
+  @media ${theme.media.mobile} {
+  
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
 `

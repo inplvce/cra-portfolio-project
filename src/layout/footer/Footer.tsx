@@ -69,7 +69,7 @@ text-align: center;
     display: table-column;
     justify-content: center;
     text-align: center;
-    margin-bottom: -24px;
+    //margin-bottom: -8px;
   }
   
 `

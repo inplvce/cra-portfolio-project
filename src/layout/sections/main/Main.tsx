@@ -36,8 +36,15 @@ const StyledMain = styled.div`
   span {
     display: inline-block;
     justify-content: space-between;
+    text-align: center;
+
+
+    @media ${theme.media.mobile} {
+      margin: 24px 10%;
+    }
   }
 
+  
 `
 
 
@@ -56,7 +63,7 @@ object-fit: cover;
 
   
   @media ${theme.media.mobile} {
-    margin-top: -40px;
+
     max-width: 200px;
     max-height: 100%;
     //padding-bottom: 24px;
@@ -85,15 +92,27 @@ object-fit: cover;
 
 
 const MainTitle = styled.h1`
-  
+  @media ${theme.media.mobile} {
+    text-align: center;
+  }
 `
 
 const Name = styled.h2`
 
+    @media ${theme.media.mobile} {
+      text-align: center;
+    }
 `
 const Paragraph = styled.p`
   margin-top: 24px;
   margin-bottom: 40px;
+  
+  @media ${theme.media.mobile} {
+
+    text-align: center;
+    max-width: 200px;
+    margin: 24px 25%;
+  }
 
 `
 
@@ -102,7 +121,7 @@ const StyledNaming = styled.div`
 
 `
 
-const LineForTextMain = styled.span`
+const LineForTextMain = styled.div`
 position: relative;
   z-index: 0;
   //

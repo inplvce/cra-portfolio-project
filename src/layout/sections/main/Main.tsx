@@ -83,12 +83,14 @@ object-fit: cover;
 
     max-width: 200px;
     max-height: 100%;
+    order: -1;
 
   }
   @media ${theme.media.tablet} {
 
     max-width: 200px;
     max-height: 100%;
+    order: -1;
 
   }
   

@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Manrope, sans-serif;
     line-height: 110%; /* 67.2px */
     //font-size: 3.5em;
-    font-size: calc((100vw - 360px) / (1920 - 360) * (56 - 40) + 40px);
+    font-size: calc((100vw - 360px) / (1920 - 360) * (56 - 44) + 44px);
     font-weight: 450;
     //font-weight: 400;
     //line-height: 120%; /* 67.2px */
@@ -45,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
   h2 {
     color: #1a1b1d;
     font-family: Manrope, sans-serif;
-    font-size: calc((100vw - 360px) / (1920 - 360) * (56 - 40) + 40px);
+    font-size: calc((100vw - 360px) / (1920 - 360) * (56 - 44) + 44px);
     font-weight: 450;
     line-height: 110%; /* 67.2px */
     //letter-spacing: -0.96px;

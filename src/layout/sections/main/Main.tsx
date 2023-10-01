@@ -69,9 +69,10 @@ const Photo = styled.img`
 width: 400px;
 
   //padding-top: 40px;
+  margin: 16px 0;
   padding-bottom: 8px;
   border-radius: 100%;
-  order: -1;
+  order: 0;
   //border: teal 2px solid;
 object-fit: cover;
   aspect-ratio: 1/1;

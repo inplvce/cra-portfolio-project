@@ -96,7 +96,7 @@ const StyledTopTitleWork = styled.h3`
   @media ${theme.media.tablet} {
     margin-top: -24px;
   }
-\`
+
   
   @media ${theme.media.mobile} {
     margin-top: -40px;

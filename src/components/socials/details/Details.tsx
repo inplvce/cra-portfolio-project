@@ -11,8 +11,8 @@ export const Details = () => {
             <ul>
                 <li><a href='ukaniushenka@gmail.com'>ukaniushenka@gmail.com</a></li>
                <li><a href='tel:+375297452404'> <LineForTextDetails>+375 29 745 24 04</LineForTextDetails></a></li>
-                {/*<TitleDetailssStyled>LOCATION</TitleDetailssStyled>*/}
-                {/*<LocationText>Belarus, Minsk (GMT+3)</LocationText>*/}
+                <TitleDetailssStyled>LOCATION</TitleDetailssStyled>
+                <LocationText>Belarus, Minsk (GMT+3)</LocationText>
             </ul>
         </DetailsStyled>
     );

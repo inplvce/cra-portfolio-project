@@ -2,9 +2,10 @@ import React from 'react';
 import styled from "styled-components";
 // import {SectionTitle} from "../SectionTitle";
 
-import photo from "../../assets/images/myImg.jpg";
-import {Container} from "../container/Container";
-import {FlexWrapper} from "../FlexWrapper";
+import photo from "../../../assets/images/myImg.jpg";
+import {Container} from "../../../components/container/Container";
+import {FlexWrapper} from "../../../components/FlexWrapper";
+import {theme} from "../../../styles/Theme";
 
 export const Slogan = () => {
     return (
@@ -43,17 +44,21 @@ align-items: center;
 const StyledBlocksSlogan = styled.span`
 display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   max-width: 1140px;
   width: 100%;
   //background-color: teal;
 `
 
 const StyledSlogan = styled.section`
+  
   min-height: 280px;
-  height: 100%;
+  height: 300px;
   background-color: #1A1B1D;
-  padding-top: 104px;
+
+  @media ${theme.media.mobile}{
+    margin-bottom: -100px;
+  }
 
 
 `
@@ -75,5 +80,10 @@ const StyledText  = styled.h4`
   text-align: left;
   margin-top: 48px;
   font-size: 56px;
+  
+  @media ${theme.media.mobile} {
+    font-size: 32px;
+    orden: -1;
+  }
 
 `

@@ -4,6 +4,7 @@ import {Icon} from "../../components/icon/Icon";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Socials} from "../../components/socials/Socials";
 import {Container} from "../../components/container/Container";
+import {theme} from "../../styles/Theme";
 
 export const Footer = () => {
     return (
@@ -39,6 +40,7 @@ export const Footer = () => {
                     {/*    </SocialItem>*/}
                     {/*</SocialList>*/}
                     <StyledBlocksFooter>
+
                         <SocialsFooter>
                             <TextStyled href='Behance'>Behance</TextStyled>
                             <TextStyled href='Instagram'>Instagram</TextStyled>
@@ -46,7 +48,7 @@ export const Footer = () => {
                             <TextStyled href='Telegram'>Telegram</TextStyled>
                         </SocialsFooter>
                         <CopyrightBlock>
-                            <Copyright>@ Uladzimir Kaniushenka, All Right Reserved.</Copyright>
+                            <Copyright>2023 © Edition.</Copyright>
                         </CopyrightBlock>
                     </StyledBlocksFooter>
 
@@ -57,20 +59,28 @@ export const Footer = () => {
 };
 
 const StyledBlocksFooter = styled.span`
-  
+  display: flex;
+  justify-content: space-between;
 text-align: center;
   max-width: 1140px;
   width: 100%;
   
-
+  @media ${theme.media.mobile} {
+    display: table-column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: -24px;
+  }
+  
 `
+
 
 const StyledFooter = styled.footer`
   background-color: #1A1B1D;
   color: #F0F4F6;
-  min-height: 20vh;
-  padding-top: 240px;
-  padding-bottom: 16px;
+  min-height: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 `
 
 const Name = styled.span`
@@ -98,9 +108,10 @@ const SocialsFooter = styled.div`
   justify-content: center;
   gap: 24px;
 
-
-
-
+  @media ${theme.media.mobile} {
+    margin-bottom: 8px;
+  }
+  
 `
 
 const TextStyled = styled.a`

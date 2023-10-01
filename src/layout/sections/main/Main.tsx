@@ -56,7 +56,10 @@ const StyledMain = styled.div`
 
 
     @media ${theme.media.mobile} {
-      margin: 24px 10%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      //margin: 24px 10%;
     }
   }
 
@@ -80,7 +83,7 @@ object-fit: cover;
 
   
   @media ${theme.media.mobile} {
-
+margin: auto 16px;
     max-width: 200px;
     max-height: 100%;
     order: -1;
@@ -155,9 +158,9 @@ position: relative;
   //   width: 100%;
   //   height: 20px;
   //   background-color: ${theme.colors.whiteFont};
-  //  
+  //
   //   position: absolute;
   //   bottom: 0;
   //   z-index: -1;
-  }
+  // }
 `

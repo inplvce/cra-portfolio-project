@@ -197,6 +197,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 24px;
     font-style: normal;
     letter-spacing: 0.36px;
+
   }
 
   img {
@@ -218,6 +219,9 @@ section {
   }
 }
 
+label {
+  font-weight: 500;
+}
 
 
 `

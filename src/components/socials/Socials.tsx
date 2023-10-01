@@ -5,7 +5,7 @@ import {theme} from "../../styles/Theme";
 
 export const Socials = () => {
     return (
-        <div>
+        <SocialsStyled>
             <TitleSocialsStyled>SOCIALS</TitleSocialsStyled>
             <ul>
                 <li><a href='Behance'>Behance</a></li>
@@ -13,7 +13,7 @@ export const Socials = () => {
                 <li><a href='LinkedIn'>LinkedIn</a></li>
                 <li><a href='Telegram'>Telegram</a></li>
             </ul>
-        </div>
+        </SocialsStyled>
     );
 };
 
@@ -25,3 +25,12 @@ const TitleSocialsStyled = styled.p`
   font-weight: 500;
 `
 
+const SocialsStyled = styled.div`
+  @media ${theme.media.mobile} {
+display: none;
+  }
+
+  @media ${theme.media.tablet} {
+    display: none;
+  }
+`

@@ -82,23 +82,21 @@ const StyledForm = styled.form`
   align-items: start;
   gap: 10px;
 
-  @media ${theme.media.tablet} {
-    
-  }
-
-  @media ${theme.media.tablet} {
-
-  }
-
 `
 
 const StyledContacts = styled.div`
 display: flex;
   flex-direction: column;
-  
-  @media ${}
-  
 
+  @media ${theme.media.mobile} {
+    order: -1;
+   
+  }
+
+  @media ${theme.media.tablet} {
+    order: -1;
+
+  }
 `
 
 const Field = styled.input`
@@ -107,7 +105,13 @@ const Field = styled.input`
   //background-color: burlywood;
   width: calc(100% - 50px);
   margin-left: 54px;
+  margin-top: 8px;
 
+  @media ${theme.media.mobile} {
+
+    font-size: 16px;
+    margin-left: 44px;
+  }
 `
 const StyledContentEdit = styled.textarea`
   max-width: 100%;
@@ -120,22 +124,37 @@ const StyledContentEdit = styled.textarea`
   //background-color: teal;
   width: calc(100% - 50px);
   margin-left: 54px;
-  
+  margin-top: 8px;
+
+
+  @media ${theme.media.mobile} {
+    font-size: 16px;
+    margin-left: 44px;
+  }
+
+  @media ${theme.media.tablet} {
+    margin-left: 44px;
+  }
 `
 
 
 const StyledText = styled.text`
   color: #F0F4F6;
-  //margin-left: 40px;
   font-size: 24px;
+
   //background-color: teal;
-  
-  
-  
-  
-  @media screen and (max-width: 768px) {
-    width: calc(100%  / 5);
+
+
+  @media ${theme.media.mobile} {
+
+    font-size: 16px;
+
   }
+  
+  //@media screen and (max-width: 768px) {
+  //  width: calc(100%  / 5);
+  //  
+  //}
 `
 const StyledLabel = styled.label`
   color: #828282;
@@ -145,9 +164,21 @@ const StyledLabel = styled.label`
   max-height: 400px;
 margin-right: 40px;
   padding-bottom: 80px;
+  //border: green solid 1px;
   //background-color: teal;
   //background-color: teal;
 
+  @media ${theme.media.mobile} {
+    margin-right: 24px;
+    margin-left: 8px;
+    font-size: 10px;
+  }
+
+  @media ${theme.media.tablet} {
+    margin-right: 24px;
+    margin-left: 8px;
+    font-size: 10px;
+  }
 `
 
 const ButtonEllipsContact = styled.button`
@@ -164,7 +195,7 @@ const ButtonEllipsContact = styled.button`
 
   color: #F0F4F6;
   font-family: Manrope, sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 225.023%; /* 40.504px */
@@ -178,13 +209,28 @@ const ButtonEllipsContact = styled.button`
     background-color: rgb(58, 59, 196);
 
   }
+
+ @media ${theme.media.mobile} {
+   width: 140px;
+   height: 140px;
+ }
 `
 const LineStyledContacts = styled.div`
 
-  border-bottom: 1px solid #333436;
+  border-bottom: 1.6px solid #333436;
   margin-top: 40px;
   margin-bottom: 40px;
   width: 100%;
+  //filter: blur(1px);
+  
+  @media ${theme.media.mobile} {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media ${theme.media.tablet} {
+    width: 100%;
+  }
 `
 
 const StyledBlockForButton = styled.div`

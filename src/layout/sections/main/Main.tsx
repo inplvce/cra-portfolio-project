@@ -33,6 +33,22 @@ const StyledMain = styled.div`
   display: flex;
   padding-top: 80px;
   
+  ${FlexWrapper} {
+    @media ${theme.media.mobile}{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    @media ${theme.media.tablet}{
+      display: flex;
+      justify-content: space-around;
+
+
+    }
+  }
+  
   span {
     display: inline-block;
     justify-content: space-between;
@@ -66,12 +82,17 @@ object-fit: cover;
 
     max-width: 200px;
     max-height: 100%;
-    //padding-bottom: 24px;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
 
+  }
+  @media ${theme.media.tablet} {
+
+    max-width: 200px;
+    max-height: 100%;
+
+  }
+  
 `
+
 // const PhotoWrapper = styled.div`
 // position: relative;
 //

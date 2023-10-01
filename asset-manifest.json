@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cra-portfolio-project/static/css/main.31d6cfe0.css",
-    "main.js": "/cra-portfolio-project/static/js/main.489b2bc2.js",
+    "main.js": "/cra-portfolio-project/static/js/main.26727c62.js",
     "static/js/787.25eaef86.chunk.js": "/cra-portfolio-project/static/js/787.25eaef86.chunk.js",
     "static/media/myImg.jpg": "/cra-portfolio-project/static/media/myImg.95d93a4173be573fa6c2.jpg",
     "index.html": "/cra-portfolio-project/index.html",
-    "main.489b2bc2.js.map": "/cra-portfolio-project/static/js/main.489b2bc2.js.map",
+    "main.26727c62.js.map": "/cra-portfolio-project/static/js/main.26727c62.js.map",
     "787.25eaef86.chunk.js.map": "/cra-portfolio-project/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.489b2bc2.js"
+    "static/js/main.26727c62.js"
   ]
 }
